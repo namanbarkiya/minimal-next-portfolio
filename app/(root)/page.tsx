@@ -4,11 +4,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import Image from "next/image";
+import namanImg from "../../public/naman-img.png";
 
 export default async function IndexPage() {
     return (
         <>
-            <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+            <section className="space-y-6 pb-8 pt-6 mb-10 md:pb-12 md:pt-10 lg:py-32">
                 <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
                     {/* <Link
                         href={"siteConfig.links.twitter"}
@@ -17,6 +19,18 @@ export default async function IndexPage() {
                     >
                         Follow along on Twitter
                     </Link> */}
+                    {/* <div className="max-w-[16rem]"> */}
+                    <Image
+                        src={namanImg}
+                        height={100}
+                        width={100}
+                        layout="responsive"
+                        // quality={100}
+                        className="rounded-full mb-6"
+                        style={{ maxWidth: "16rem" }}
+                        alt="naman-barkiya-img"
+                    />
+                    {/* </div> */}
                     <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
                         Naman Barkiya
                     </h1>
