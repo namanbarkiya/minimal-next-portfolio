@@ -1,17 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 // import { "siteConfig } from "@/config/site"";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
-import Image from "next/image";
 import namanImg from "../../public/naman-img.png";
 
 export default async function IndexPage() {
     return (
         <>
-            <section className="space-y-6 pb-8 pt-6 mb-10 md:pb-12 md:pt-10 lg:py-32">
-                <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+            <section className="space-y-6 pb-8 pt-6 mb-10 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+                <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
                     {/* <Link
                         href={"siteConfig.links.twitter"}
                         className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
@@ -24,10 +24,12 @@ export default async function IndexPage() {
                         src={namanImg}
                         height={100}
                         width={100}
-                        layout="responsive"
-                        // quality={100}
-                        className="rounded-full mb-6"
-                        style={{ maxWidth: "16rem" }}
+                        sizes="100vw"
+                        style={{
+                            width: "40%",
+                            maxWidth: "16rem",
+                        }}
+                        className="rounded-full mb-6 p-2 h-auto"
                         alt="naman-barkiya-img"
                     />
                     {/* </div> */}
@@ -43,7 +45,7 @@ export default async function IndexPage() {
                         and creative abilities, with a heavy emphasis on writing
                         well-documented code.
                     </p>
-                    <div className="space-x-4">
+                    <div className="space-x-4 mt-10">
                         <Link
                             href="/login"
                             className={cn(buttonVariants({ size: "lg" }))}
@@ -68,7 +70,7 @@ export default async function IndexPage() {
             </section>
             <section
                 id="features"
-                className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
+                className="container space-y-6 bg-slate-50 dark:bg-transparent -mt-20 py-10 md:py-12 lg:py-24"
             >
                 <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                     <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">

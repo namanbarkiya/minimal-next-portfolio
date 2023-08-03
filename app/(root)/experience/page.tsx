@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import ProjectCard from "@/components/project-card";
