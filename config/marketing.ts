@@ -3,20 +3,20 @@
 export const marketingConfig: any = {
     mainNav: [
         {
-            title: "Features",
+            title: "Skills",
             href: "/#features",
         },
         {
-            title: "Pricing",
-            href: "/pricing",
+            title: "Experience",
+            href: "/experience",
         },
         {
             title: "Blog",
             href: "/blog",
         },
-        {
-            title: "Documentation",
-            href: "/docs",
-        },
+        // {
+        //     title: "Documentation",
+        //     href: "/docs",
+        // },
     ],
 };
