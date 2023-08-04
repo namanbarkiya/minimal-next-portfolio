@@ -24,7 +24,7 @@ function DemoContainer({
     );
 }
 
-export default function CardsPage() {
+export default function ExperiencePage() {
     return (
         <>
             <PageHeader
