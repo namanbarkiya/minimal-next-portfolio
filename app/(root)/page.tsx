@@ -1,13 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-// import { "siteConfig } from "@/config/site"";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import namanImg from "../../public/naman-img.png";
-import { featuredSkills, skills } from "@/config/skills";
-import Rating from "@/components/rating";
+import { featuredSkills } from "@/config/skills";
 import { Icons } from "@/components/icons";
 import SkillsCard from "@/components/skills-card";
 
