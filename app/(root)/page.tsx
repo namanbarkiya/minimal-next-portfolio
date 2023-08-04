@@ -3,11 +3,13 @@ import Image from "next/image";
 
 // import { "siteConfig } from "@/config/site"";
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import namanImg from "../../public/naman-img.png";
-import { skills } from "@/config/skills";
+import { featuredSkills, skills } from "@/config/skills";
 import Rating from "@/components/rating";
+import { Icons } from "@/components/icons";
+import SkillsCard from "@/components/skills-card";
 
 export default async function IndexPage() {
     return (
@@ -76,7 +78,7 @@ export default async function IndexPage() {
             >
                 <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                     <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-                        Features
+                        Skills
                     </h2>
                     <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                         This project is an experiment to see how a modern app,
@@ -84,25 +86,12 @@ export default async function IndexPage() {
                         static pages would work in Next.js 13 app dir.
                     </p>
                 </div>
-                <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
-                    {skills.map((skill, id) => (
-                        <div
-                            key={id}
-                            className="relative overflow-hidden rounded-lg border bg-background p-2"
-                        >
-                            <div className="flex h-[190px] flex-col justify-between rounded-md p-6 sm:h-[210px]">
-                                <skill.icon size={50} />
-                                <div className="space-y-2">
-                                    <h3 className="font-bold">{skill.name}</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        {skill.description}
-                                    </p>
-                                    <Rating stars={skill.rating} />
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                <SkillsCard skills={featuredSkills} />
+                <Link href="/skills" className="flex justify-center">
+                    <Button variant={"outline"} className="rounded-xl">
+                        <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+                    </Button>
+                </Link>
                 <div className="mx-auto text-center md:max-w-[58rem]">
                     <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                         {siteConfig.name} also includes a blog and a
@@ -111,7 +100,7 @@ export default async function IndexPage() {
                     </p>
                 </div>
             </section>
-            <section
+            {/* <section
                 id="open-source"
                 className="container py-8 md:py-12 lg:py-24"
             >
@@ -156,7 +145,7 @@ export default async function IndexPage() {
                         </div>
                     </Link>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 }

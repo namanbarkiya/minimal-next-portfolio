@@ -24,6 +24,7 @@ import {
     User,
     X,
     Menu,
+    ChevronDown,
     // type Icon as LucideIcon,
 } from "lucide-react";
 
@@ -52,6 +53,7 @@ export const Icons = {
     moon: Moon,
     laptop: Laptop,
     menu: Menu,
+    chevronDown: ChevronDown,
     gitHub: ({ ...props }: LucideProps) => (
         <svg
             aria-hidden="true"

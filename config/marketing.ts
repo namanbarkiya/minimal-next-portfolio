@@ -4,7 +4,7 @@ export const marketingConfig: any = {
     mainNav: [
         {
             title: "Skills",
-            href: "/#features",
+            href: "/skills",
         },
         {
             title: "Experience",
