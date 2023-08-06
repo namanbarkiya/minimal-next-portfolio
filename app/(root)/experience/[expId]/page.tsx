@@ -1,12 +1,27 @@
-import { Icons } from "@/components/icons";
-import { buttonVariants } from "@/components/ui/button";
-import { cn, formatDate } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
-import namanImg from "../../../../public/naman-img.png";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
-export default function Experience() {
+import { Icons } from "@/components/icons";
+import { buttonVariants } from "@/components/ui/button";
+import { cn, formatDateFromObj } from "@/lib/utils";
+import { Experiences } from "@/config/experience";
+import namanImg from "../../../../public/naman-img.png";
+import ChipContainer from "@/components/chip-container";
+
+interface ExperiencePageProps {
+    params: {
+        expId: string;
+    };
+}
+
+export default function Experience({ params }: ExperiencePageProps) {
+    let exp = Experiences.find((val) => val.id === params.expId);
+    if (!exp) {
+        redirect("/experience");
+    }
+
     return (
         <article className="container relative max-w-3xl py-6 lg:py-10">
             <Link
@@ -24,11 +39,12 @@ export default function Experience() {
                     dateTime={Date.now().toString()}
                     className="block text-sm text-muted-foreground"
                 >
-                    Published on {formatDate(Date.now())}
+                    Started on {formatDateFromObj(exp.startDate)}
                 </time>
                 <h1 className="mt-2 inline-block font-heading text-4xl leading-tight lg:text-5xl">
-                    Test
+                    {exp.companyName}
                 </h1>
+                <ChipContainer textArr={exp.category} />
                 <div className="mt-4 flex space-x-4">
                     <Link
                         href={`https://twitter.com/test`}
@@ -51,17 +67,23 @@ export default function Experience() {
                     </Link>
                 </div>
             </div>
-            {/* {post.image && (
-      <Image
-        src={post.image}
-        alt={post.title}
-        width={720}
-        height={405}
-        className="my-8 rounded-md border bg-muted transition-colors"
-        priority
-      />
-    )} */}
-            {/* <Mdx code={post.body.code} /> */}
+
+            <Image
+                src={exp.companyLogoImg}
+                alt={exp.companyName}
+                width={720}
+                height={405}
+                className="my-8 rounded-md border bg-muted transition-colors"
+                priority
+            />
+
+            <div className="mb-7 ">
+                <h1 className="inline-block font-heading text-2xl leading-tight lg:text-2xl">
+                    Tech Stack
+                </h1>
+                <ChipContainer textArr={exp.techStack} />
+            </div>
+
             <hr className="mt-12" />
             <div className="flex justify-center py-6 lg:py-10">
                 <Link

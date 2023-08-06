@@ -1,0 +1,31 @@
+export enum ValidSkills {
+    NextJS = "Next.js",
+    React = "React",
+    GraphQL = "GraphQL",
+    NestJS = "Nest.js",
+    ExpressJS = "express.js",
+    NodeJS = "Node.js",
+    MongoDB = "MongoDB",
+    Typescript = "Typescript",
+    Javascript = "Javascript",
+    HTML5 = "HTML 5",
+    CSS3 = "CSS 3",
+    ReactNative = "React Native",
+    Angular = "Angular",
+    Redux = "Redux",
+    SocketIO = "Socket.io",
+    MaterialUI = "Material UI",
+    TailwindCSS = "Tailwind CSS",
+    AWS = "AWS",
+    Bootstrap = "Bootstrap",
+    MySQL = "MySQL",
+}
+
+export enum ValidCategory {
+    FullStack = "Full Stack",
+    Frontend = "Frontend",
+    Backend = "Backend",
+    UIUX = "UI/UX",
+    WebDev = "Web Dev",
+    MobileDev = "Mobile Dev",
+}

@@ -2,12 +2,15 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
-import Chip from "@/components/ui/chip";
+import Link from "next/link";
+import ChipContainer from "./chip-container";
 
 interface ProjectCardProps {
     title: string;
     description: string;
     bgSrc: any;
+    chips: string[];
+    id: string;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -30,13 +33,15 @@ export default function ProjectCard(props: ProjectCardProps) {
                 <p className="font-normal text-gray-700 dark:text-gray-400">
                     {props.description}
                 </p>
-                <div>
-                    <Chip content="UI/UX" />
+                <div className="flex gap-2 flex-wrap">
+                    <ChipContainer textArr={props.chips} />
                 </div>
-                <Button variant={"default"} className="mt-2">
-                    Read more
-                    <Icons.chevronRight className="w-4 ml-1" />
-                </Button>
+                <Link href={`/experience/${props.id}`}>
+                    <Button variant={"default"} className="mt-2">
+                        Read more
+                        <Icons.chevronRight className="w-4 ml-1" />
+                    </Button>
+                </Link>
             </div>
         </div>
     );

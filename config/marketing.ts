@@ -10,10 +10,10 @@ export const marketingConfig: any = {
             title: "Experience",
             href: "/experience",
         },
-        {
-            title: "Blog",
-            href: "/blog",
-        },
+        // {
+        //     title: "Blog",
+        //     href: "/blog",
+        // },
         // {
         //     title: "Documentation",
         //     href: "/docs",
