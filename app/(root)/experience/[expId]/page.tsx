@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { redirect } from "next/navigation";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
@@ -41,8 +42,11 @@ export default function Experience({ params }: ExperiencePageProps) {
                 >
                     Started on {formatDateFromObj(exp.startDate)}
                 </time>
-                <h1 className="mt-2 inline-block font-heading text-4xl leading-tight lg:text-5xl">
+                <h1 className="flex items-center mt-2 font-heading text-4xl leading-tight lg:text-5xl">
                     {exp.companyName}
+                    <Link href={exp.websiteLink} target="_blank">
+                        <HiOutlineExternalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
+                    </Link>
                 </h1>
                 <ChipContainer textArr={exp.category} />
                 <div className="mt-4 flex space-x-4">
@@ -78,10 +82,44 @@ export default function Experience({ params }: ExperiencePageProps) {
             />
 
             <div className="mb-7 ">
-                <h1 className="inline-block font-heading text-2xl leading-tight lg:text-2xl">
+                <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
                     Tech Stack
-                </h1>
+                </h2>
                 <ChipContainer textArr={exp.techStack} />
+            </div>
+
+            <div className="mb-7 ">
+                <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
+                    Description
+                </h2>
+                {<exp.descriptionComponent />}
+            </div>
+
+            <div className="mb-7 ">
+                <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+                    Page Info
+                </h2>
+                {exp.pagesInfoArr.map((page, ind) => (
+                    <div key={ind}>
+                        <h3 className="inline-block font-heading text-xl leading-tight lg:text-xl mt-3">
+                            {page.title}
+                        </h3>
+                        <div>
+                            <p>{page.description}</p>
+                            {page.imgArr.map((img, ind) => (
+                                <Image
+                                    src={img}
+                                    key={ind}
+                                    alt={img}
+                                    width={720}
+                                    height={405}
+                                    className="my-4 rounded-md border bg-muted transition-colors"
+                                    priority
+                                />
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
 
             <hr className="mt-12" />
