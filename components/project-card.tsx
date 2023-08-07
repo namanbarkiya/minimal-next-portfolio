@@ -18,7 +18,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         <div className="p-6 max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-transparent dark:border-gray-700">
             <div>
                 <Image
-                    className="rounded-lg"
+                    className="rounded-lg border border-gray-200  dark:border-gray-700"
                     src={props.bgSrc}
                     alt="img"
                     sizes="100vw"

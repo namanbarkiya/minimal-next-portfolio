@@ -12,6 +12,7 @@ import { Experiences } from "@/config/experience";
 import namanImg from "../../../../public/naman-img.png";
 import ChipContainer from "@/components/chip-container";
 import ExperienceDescription from "@/components/exp-desc/exp-desc";
+import CustomToolkit from "@/components/custom-toolkit";
 
 interface ExperiencePageProps {
     params: {
@@ -46,9 +47,11 @@ export default function Experience({ params }: ExperiencePageProps) {
                 </time>
                 <h1 className="flex items-center mt-2 font-heading text-4xl leading-tight lg:text-5xl">
                     {exp.companyName}
-                    <Link href={exp.websiteLink} target="_blank">
-                        <HiOutlineExternalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
-                    </Link>
+                    <CustomToolkit text="Please note that some project links may be temporarily unavailable.">
+                        <Link href={exp.websiteLink} target="_blank">
+                            <HiOutlineExternalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
+                        </Link>
+                    </CustomToolkit>
                 </h1>
                 <ChipContainer textArr={exp.category} />
                 <div className="mt-4 flex space-x-4">

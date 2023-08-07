@@ -49,7 +49,8 @@ export default async function IndexPage() {
                     </p>
                     <div className="space-x-4 mt-10">
                         <Link
-                            href="/login"
+                            href={"https://github.com/namanbarkiya"}
+                            target="_blank"
                             className={cn(buttonVariants({ size: "lg" }))}
                         >
                             GitHub
@@ -92,9 +93,7 @@ export default async function IndexPage() {
                 </Link>
                 <div className="mx-auto text-center md:max-w-[58rem]">
                     <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        {siteConfig.name} also includes a blog and a
-                        full-featured documentation site built using
-                        Contentlayer and MDX.
+                        See all the relevant skills.
                     </p>
                 </div>
             </section>

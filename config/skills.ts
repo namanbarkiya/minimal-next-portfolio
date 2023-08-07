@@ -11,6 +11,7 @@ import {
     SiMui,
     SiMysql,
     SiNestjs,
+    SiNetlify,
     SiNextdotjs,
     SiNodedotjs,
     SiReact,
@@ -168,6 +169,13 @@ export const skillsUnsorted: skillsInterface[] = [
             "Manage and organize relational databases efficiently for data-driven applications.",
         rating: 2,
         icon: SiMysql,
+    },
+    {
+        name: "Netlify",
+        description:
+            "Manage and organize relational databases efficiently for data-driven applications.",
+        rating: 4,
+        icon: SiNetlify,
     },
 ];
 
