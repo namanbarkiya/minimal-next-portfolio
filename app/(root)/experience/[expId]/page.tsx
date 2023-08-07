@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { AiFillStar } from "react-icons/ai";
 
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import { cn, formatDateFromObj } from "@/lib/utils";
 import { Experiences } from "@/config/experience";
 import namanImg from "../../../../public/naman-img.png";
 import ChipContainer from "@/components/chip-container";
+import ExperienceDescription from "@/components/exp-desc/exp-desc";
 
 interface ExperiencePageProps {
     params: {
@@ -92,7 +94,11 @@ export default function Experience({ params }: ExperiencePageProps) {
                 <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
                     Description
                 </h2>
-                {<exp.descriptionComponent />}
+                {/* {<exp.descriptionComponent />} */}
+                <ExperienceDescription
+                    paragraphs={exp.descriptionDetails.paragraphs}
+                    bullets={exp.descriptionDetails.bullets}
+                />
             </div>
 
             <div className="mb-7 ">
@@ -101,8 +107,8 @@ export default function Experience({ params }: ExperiencePageProps) {
                 </h2>
                 {exp.pagesInfoArr.map((page, ind) => (
                     <div key={ind}>
-                        <h3 className="inline-block font-heading text-xl leading-tight lg:text-xl mt-3">
-                            {page.title}
+                        <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+                            <AiFillStar className="h-5 w-5 mr-2" /> {page.title}
                         </h3>
                         <div>
                             <p>{page.description}</p>

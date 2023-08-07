@@ -24,6 +24,7 @@ export enum ValidSkills {
 export enum ValidCategory {
     FullStack = "Full Stack",
     Frontend = "Frontend",
+    Api = "Api",
     Backend = "Backend",
     UIUX = "UI/UX",
     WebDev = "Web Dev",
