@@ -76,7 +76,7 @@ export default async function IndexPage() {
                             <DropdownMenuContent className="w-56">
                                 <DropdownMenuLabel className="flex items-center text-muted-foreground">
                                     <BsInfoCircle className="w-4 h-4 mr-2" />
-                                    hint: my name
+                                    Hint: Naman
                                 </DropdownMenuLabel>
                             </DropdownMenuContent>
                         </DropdownMenu>
