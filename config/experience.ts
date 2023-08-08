@@ -178,7 +178,7 @@ export const Experiences: ExperienceInterface[] = [
             ValidCategory.UIUX,
         ],
         shortDescription:
-            "Developed and optimized a high-performing website catering to over 4000 users, emphasizing efficiency and maintainability.",
+            "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
         websiteLink: "https://blog.builtdesign.in",
         techStack: [
             ValidSkills.ReactNative,
@@ -219,16 +219,91 @@ export const Experiences: ExperienceInterface[] = [
         ],
         descriptionDetails: {
             paragraphs: [
-                `Venturing into the world of creativity at The Super Quotes was an exhilarating journey. As a passionate developer, I led the charge in crafting a compelling application from inception to completion, using the dynamic duo of JavaScript and React Native.`,
-                `The heart of my achievement lay in the seamless integration of APIs, threading a tapestry of data flow that propelled the application's functionality to new heights.`,
-                `With the wizardry of Redux, I choreographed a symphony of state management and performance optimization, orchestrating a ballet of responsiveness that wowed users with every interaction.`,
-                `A crescendo awaited as I unveiled the culmination of my work on the grand stage of the Google Play Store. The app's debut marked an epoch, opening doors to an expansive audience eager to embrace the charm of The Super Quotes.`,
+                `As an integral part of the Builtdesign project, I embarked on the creation of an engaging blogs website, seamlessly intertwining the power of Netlify CMS and React.`,
+                `My role was to weave together the threads of technology and creativity, crafting a platform that echoed the essence of Builtdesign's vision.`,
+                `The symphony of React components danced in harmony, orchestrating an interface that seamlessly materialized the blogosphere.`,
+                `The crowning jewel was the integration of Netlify CMS, an elegant solution that granted content creators a canvas to paint their narratives.`,
+                `This venture left an indelible mark on my skill set, sharpening my proficiency in both front-end and content management technologies.`,
             ],
             bullets: [
-                "Led the end-to-end development of a captivating application using JavaScript and React Native.",
-                "Championed the integration of APIs, harmonizing data flow and enhancing application functionality.",
-                "Conducted Redux magic to ensure state management and optimize performance, delivering a mesmerizing user experience.",
-                "Premiered the application on the Google Play Store, capturing hearts and expanding its user base.",
+                "Designed and developed the Builtdesign Blogs Website as an integral part of the larger project.",
+                "Harmonized the power of React to create a captivating and intuitive user interface.",
+                "Integrated Netlify CMS, providing them with a user-friendly platform.",
+                "Enhanced my skill set in front-end development and content management technologies.",
+            ],
+        },
+    },
+    {
+        id: "apex-shopping",
+        companyName: "Apex Shopping App",
+        category: [
+            ValidCategory.MobileDev,
+            ValidCategory.Api,
+            ValidCategory.UIUX,
+        ],
+        shortDescription:
+            "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
+        websiteLink: "https://github.com/namanbarkiya/apex-shopping-app",
+        techStack: [
+            ValidSkills.ReactNative,
+            ValidSkills.NextJS,
+            ValidSkills.React,
+            ValidSkills.NodeJS,
+            ValidSkills.MongoDB,
+            ValidSkills.NestJS,
+            ValidSkills.Typescript,
+        ],
+        startDate: new Date("2021-07-14"),
+        endDate: new Date("2022-07-01"),
+        companyLogoImg: "/experience/apex/logo.png",
+        pagesInfoArr: [
+            {
+                title: "Splash Screen",
+                description: "test description",
+                imgArr: ["/experience/apex/app_7.webp"],
+            },
+            {
+                title: "Login/Signup Authentication",
+                description: "test description",
+                imgArr: ["/experience/apex/app_1.webp"],
+            },
+            {
+                title: "All Products Explore Screen",
+                description: "test description",
+                imgArr: ["/experience/apex/app_3.webp"],
+            },
+            {
+                title: "Admin Panel",
+                description: "test description",
+                imgArr: [
+                    "/experience/apex/app_4.webp",
+                    "/experience/apex/app_6.webp",
+                ],
+            },
+            {
+                title: "Sidenav Navigation",
+                description: "test description",
+                imgArr: ["/experience/apex/app_5.webp"],
+            },
+            {
+                title: "Firebase Database",
+                description: "test description",
+                imgArr: ["/experience/apex/db.webp"],
+            },
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                `As an integral part of the Builtdesign project, I embarked on the creation of an engaging blogs website, seamlessly intertwining the power of Netlify CMS and React.`,
+                `My role was to weave together the threads of technology and creativity, crafting a platform that echoed the essence of Builtdesign's vision.`,
+                `The symphony of React components danced in harmony, orchestrating an interface that seamlessly materialized the blogosphere.`,
+                `The crowning jewel was the integration of Netlify CMS, an elegant solution that granted content creators a canvas to paint their narratives.`,
+                `This venture left an indelible mark on my skill set, sharpening my proficiency in both front-end and content management technologies.`,
+            ],
+            bullets: [
+                "Designed and developed the Builtdesign Blogs Website as an integral part of the larger project.",
+                "Harmonized the power of React to create a captivating and intuitive user interface.",
+                "Integrated Netlify CMS, providing them with a user-friendly platform.",
+                "Enhanced my skill set in front-end development and content management technologies.",
             ],
         },
     },

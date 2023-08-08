@@ -3,11 +3,23 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { siteConfig } from "@/config/site";
 import namanImg from "../../public/naman-img.png";
 import { featuredSkills } from "@/config/skills";
 import { Icons } from "@/components/icons";
 import SkillsCard from "@/components/skills-card";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
+import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuLabel,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default async function IndexPage() {
     return (
@@ -28,10 +40,10 @@ export default async function IndexPage() {
                         width={100}
                         sizes="100vw"
                         style={{
-                            width: "40%",
+                            width: "60%",
                             maxWidth: "16rem",
                         }}
-                        className="rounded-full mb-6 p-2 h-auto"
+                        className="rounded-full mb-0 p-2 h-auto md:mb-2"
                         alt="naman-barkiya-img"
                     />
                     {/* </div> */}
@@ -41,12 +53,41 @@ export default async function IndexPage() {
                     <h3 className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl">
                         Full Stack Developer
                     </h3>
-                    <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+                    <Accordion
+                        type="single"
+                        collapsible
+                        className="flex items-center w-full max-w-[35rem]"
+                    >
+                        <AccordionItem value="main-ques" className="flex-1">
+                            <AccordionTrigger>
+                                <p className="flex items-center">
+                                    Can you guess my favorite coding problem?
+                                </p>
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                That&apos;s right! It&apos;s determining whether
+                                a string is a palindrome or not.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                                <BsQuestionCircle className="w-5 h-5 ml-3 text-muted-foreground " />
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent className="w-56">
+                                <DropdownMenuLabel className="flex items-center text-muted-foreground">
+                                    <BsInfoCircle className="w-4 h-4 mr-2" />
+                                    hint: my name
+                                </DropdownMenuLabel>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </Accordion>
+
+                    {/* <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
                         Full-stack web developer with two years&apos; experience
                         who is innovative and ambitious. Excellent analytical
                         and creative abilities, with a heavy emphasis on writing
                         well-documented code.
-                    </p>
+                    </p> */}
                     <div className="space-x-4 mt-10">
                         <Link
                             href={"https://github.com/namanbarkiya"}

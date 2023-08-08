@@ -8,12 +8,12 @@ import {
 import React from "react";
 import { BsInfoCircle } from "react-icons/bs";
 
-interface CustomToolkitProps {
+interface CustomTooltipProps {
     children: React.ReactNode;
     text: string;
 }
 
-export default function CustomToolkit({ children, text }: CustomToolkitProps) {
+export default function CustomTooltip({ children, text }: CustomTooltipProps) {
     return (
         <TooltipProvider>
             <Tooltip>
