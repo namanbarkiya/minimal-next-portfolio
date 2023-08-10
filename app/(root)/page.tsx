@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { BiLaugh } from "react-icons/bi";
 
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -65,12 +66,16 @@ export default async function IndexPage() {
                                 </p>
                             </AccordionTrigger>
                             <AccordionContent>
-                                That&apos;s right! It&apos;s determining whether
-                                a string is a palindrome or not.
+                                &ldquo;Check if a given string is palindrome or
+                                not&rdquo;
+                                <BiLaugh className="w-4 h-5 md:w-5 ml-2" />
                             </AccordionContent>
                         </AccordionItem>
                         <DropdownMenu>
-                            <DropdownMenuTrigger asChild>
+                            <DropdownMenuTrigger
+                                asChild
+                                className="cursor-pointer"
+                            >
                                 <BsQuestionCircle className="w-5 h-5 ml-3 text-muted-foreground " />
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="w-56">
