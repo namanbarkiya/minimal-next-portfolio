@@ -2,7 +2,7 @@ import PageHeader from "@/components/page-header";
 import SkillsCard from "@/components/skills-card";
 import { skills } from "@/config/skills";
 
-export default function CardsPage() {
+export default function SkillsPage() {
     return (
         <>
             <PageHeader
