@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BiLaugh } from "react-icons/bi";
 
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -14,7 +13,6 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -68,7 +66,7 @@ export default async function IndexPage() {
                             <AccordionContent>
                                 &ldquo;Check if a given string is palindrome or
                                 not&rdquo;
-                                <BiLaugh className="w-4 h-5 md:w-5 ml-2" />
+                                <Icons.laughEmoji className="w-4 h-5 md:w-5 ml-2" />
                             </AccordionContent>
                         </AccordionItem>
                         <DropdownMenu>
@@ -76,11 +74,11 @@ export default async function IndexPage() {
                                 asChild
                                 className="cursor-pointer"
                             >
-                                <BsQuestionCircle className="w-5 h-5 ml-3 text-muted-foreground " />
+                                <Icons.questionMark className="w-5 h-5 ml-3 text-muted-foreground " />
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="w-56">
                                 <DropdownMenuLabel className="flex items-center text-muted-foreground">
-                                    <BsInfoCircle className="w-4 h-4 mr-2" />
+                                    <Icons.infoMark className="w-4 h-4 mr-2" />
                                     Hint: Naman
                                 </DropdownMenuLabel>
                             </DropdownMenuContent>

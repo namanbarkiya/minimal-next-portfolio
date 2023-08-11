@@ -1,25 +1,4 @@
-import {
-    SiAmazonaws,
-    SiAngular,
-    SiBootstrap,
-    SiCss3,
-    SiExpress,
-    SiGraphql,
-    SiHtml5,
-    SiJavascript,
-    SiMongodb,
-    SiMui,
-    SiMysql,
-    SiNestjs,
-    SiNetlify,
-    SiNextdotjs,
-    SiNodedotjs,
-    SiReact,
-    SiRedux,
-    SiSocketdotio,
-    SiTailwindcss,
-    SiTypescript,
-} from "react-icons/si";
+import { Icons } from "@/components/icons";
 
 export interface skillsInterface {
     name: string;
@@ -34,112 +13,112 @@ export const skillsUnsorted: skillsInterface[] = [
         description:
             "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
         rating: 5,
-        icon: SiNextdotjs,
+        icon: Icons.nextjs,
     },
     {
         name: "React",
         description:
             "Craft interactive user interfaces using components, state, props, and virtual DOM.",
         rating: 5,
-        icon: SiReact,
+        icon: Icons.react,
     },
     {
         name: "GraphQL",
         description:
             "Fetch data precisely with a powerful query language for APIs and runtime execution.",
         rating: 4,
-        icon: SiGraphql,
+        icon: Icons.graphql,
     },
     {
         name: "Nest.js",
         description:
             "Create scalable and modular applications with a progressive Node.js framework.",
         rating: 4,
-        icon: SiNestjs,
+        icon: Icons.nestjs,
     },
     {
         name: "express.js",
         description:
             "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
         rating: 5,
-        icon: SiExpress,
+        icon: Icons.express,
     },
     {
         name: "Node.js",
         description:
             "Run JavaScript on the server side, enabling dynamic and responsive applications.",
         rating: 5,
-        icon: SiNodedotjs,
+        icon: Icons.nodejs,
     },
     {
         name: "MongoDB",
         description:
             "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
         rating: 5,
-        icon: SiMongodb,
+        icon: Icons.mongodb,
     },
     {
         name: "Typescript",
         description:
             "Enhance JavaScript with static types, making code more understandable and reliable.",
         rating: 5,
-        icon: SiTypescript,
+        icon: Icons.typescript,
     },
     {
         name: "Javascript",
         description:
             "Create interactive and dynamic web experiences with the versatile scripting language.",
         rating: 5,
-        icon: SiJavascript,
+        icon: Icons.javascript,
     },
     {
         name: "HTML 5",
         description:
             "Structure web content beautifully with the latest version of HyperText Markup Language.",
         rating: 4,
-        icon: SiHtml5,
+        icon: Icons.html5,
     },
     {
         name: "CSS 3",
         description:
             "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
         rating: 4,
-        icon: SiCss3,
+        icon: Icons.css3,
     },
     {
         name: "React Native",
         description:
             "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
         rating: 4,
-        icon: SiReact,
+        icon: Icons.react,
     },
     {
         name: "Angular",
         description:
             "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
         rating: 3,
-        icon: SiAngular,
+        icon: Icons.angular,
     },
     {
         name: "Redux",
         description:
             "Manage app state effectively using a predictable and centralized state container.",
         rating: 4,
-        icon: SiRedux,
+        icon: Icons.redux,
     },
     {
         name: "Socket.io",
         description:
             "Enable real-time, bidirectional communication between clients and servers effortlessly.",
         rating: 3,
-        icon: SiSocketdotio,
+        icon: Icons.socketio,
     },
     {
         name: "Material UI",
         description:
             "Create stunning and responsive UIs with a popular React UI framework.",
         rating: 4,
-        icon: SiMui,
+        icon: Icons.mui,
     },
 
     {
@@ -147,35 +126,35 @@ export const skillsUnsorted: skillsInterface[] = [
         description:
             "Design beautiful, modern websites faster with a utility-first CSS framework.",
         rating: 5,
-        icon: SiTailwindcss,
+        icon: Icons.tailwindcss,
     },
     {
         name: "AWS",
         description:
             "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
         rating: 3,
-        icon: SiAmazonaws,
+        icon: Icons.amazonaws,
     },
     {
         name: "Bootstrap",
         description:
             "Quickly create responsive and appealing web designs using a popular CSS framework.",
         rating: 2,
-        icon: SiBootstrap,
+        icon: Icons.bootstrap,
     },
     {
         name: "MySQL",
         description:
             "Manage and organize relational databases efficiently for data-driven applications.",
         rating: 2,
-        icon: SiMysql,
+        icon: Icons.mysql,
     },
     {
         name: "Netlify",
         description:
             "Manage and organize relational databases efficiently for data-driven applications.",
         rating: 4,
-        icon: SiNetlify,
+        icon: Icons.netlify,
     },
 ];
 

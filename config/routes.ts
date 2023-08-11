@@ -1,6 +1,4 @@
-// import { MarketingConfig } from "../types";
-
-export const marketingConfig: any = {
+export const routesConfig: any = {
     mainNav: [
         {
             title: "Skills",
@@ -14,13 +12,5 @@ export const marketingConfig: any = {
             title: "Contact",
             href: "/contact",
         },
-        // {
-        //     title: "Blog",
-        //     href: "/blog",
-        // },
-        // {
-        //     title: "Documentation",
-        //     href: "/docs",
-        // },
     ],
 };

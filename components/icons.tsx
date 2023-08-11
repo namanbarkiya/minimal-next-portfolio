@@ -20,16 +20,38 @@ import {
     Settings,
     SunMedium,
     Trash,
-    Twitter,
     User,
     X,
     Menu,
     ChevronDown,
-    // Star,
-    // type Icon as LucideIcon,
 } from "lucide-react";
-
-// export type Icon = LucideIcon;
+import { BiLaugh } from "react-icons/bi";
+import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
+import { HiOutlineExternalLink, HiOutlineLink } from "react-icons/hi";
+import { AiFillStar } from "react-icons/ai";
+import {
+    SiAmazonaws,
+    SiAngular,
+    SiBootstrap,
+    SiCss3,
+    SiExpress,
+    SiGraphql,
+    SiHtml5,
+    SiJavascript,
+    SiMongodb,
+    SiMui,
+    SiMysql,
+    SiNestjs,
+    SiNetlify,
+    SiNextdotjs,
+    SiNodedotjs,
+    SiReact,
+    SiRedux,
+    SiSocketdotio,
+    SiTailwindcss,
+    SiTypescript,
+} from "react-icons/si";
+import { SiGmail, SiLinkedin, SiTwitter } from "react-icons/si";
 
 export const Icons = {
     logo: Command,
@@ -55,7 +77,37 @@ export const Icons = {
     laptop: Laptop,
     menu: Menu,
     chevronDown: ChevronDown,
-    // star: Star,
+    laughEmoji: BiLaugh,
+    check: Check,
+    infoMark: BsInfoCircle,
+    questionMark: BsQuestionCircle,
+    link: HiOutlineLink,
+    externalLink: HiOutlineExternalLink,
+    star: AiFillStar,
+    amazonaws: SiAmazonaws,
+    angular: SiAngular,
+    bootstrap: SiBootstrap,
+    css3: SiCss3,
+    express: SiExpress,
+    graphql: SiGraphql,
+    html5: SiHtml5,
+    javascript: SiJavascript,
+    mongodb: SiMongodb,
+    mui: SiMui,
+    mysql: SiMysql,
+    nestjs: SiNestjs,
+    netlify: SiNetlify,
+    nextjs: SiNextdotjs,
+    nodejs: SiNodedotjs,
+    react: SiReact,
+    redux: SiRedux,
+    socketio: SiSocketdotio,
+    tailwindcss: SiTailwindcss,
+    typescript: SiTypescript,
+    gmail: SiGmail,
+    twitter: SiTwitter,
+    linkedin: SiLinkedin,
+
     gitHub: ({ ...props }: LucideProps) => (
         <svg
             aria-hidden="true"
@@ -73,12 +125,7 @@ export const Icons = {
             ></path>
         </svg>
     ),
-    twitter: Twitter,
-    check: Check,
-};
-
-export const SuccessAnimatedIcon = () => {
-    return (
+    successAnimated: ({ ...props }: LucideProps) => (
         <div className="svg-container">
             <svg
                 className="ft-green-tick"
@@ -107,5 +154,5 @@ export const SuccessAnimatedIcon = () => {
                 />
             </svg>
         </div>
-    );
+    ),
 };

@@ -1,5 +1,4 @@
 import { Icons } from "@/components/icons";
-import { SiGmail, SiLinkedin, SiTwitter } from "react-icons/si";
 
 interface SocialInterface {
     name: string;
@@ -18,19 +17,19 @@ export const SocialLinks: SocialInterface[] = [
     {
         name: "LinkedIn",
         username: "Naman Barkiya",
-        icon: SiLinkedin,
+        icon: Icons.linkedin,
         link: "https://www.linkedin.com/in/naman-barkiya-015323200/",
     },
     {
         name: "Twitter",
         username: "@namanbarkiya",
-        icon: SiTwitter,
+        icon: Icons.twitter,
         link: "https://twitter.com/namanbarkiya",
     },
     {
         name: "Gmail",
         username: "naman.barkiya02",
-        icon: SiGmail,
+        icon: Icons.gmail,
         link: "mailto:naman.barkiya02@gmail.com",
     },
 ];

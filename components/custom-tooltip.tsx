@@ -6,7 +6,7 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip";
 import React from "react";
-import { BsInfoCircle } from "react-icons/bs";
+import { Icons } from "./icons";
 
 interface CustomTooltipProps {
     children: React.ReactNode;
@@ -19,7 +19,7 @@ export default function CustomTooltip({
     text,
     icon,
 }: CustomTooltipProps) {
-    const IconComponent = icon ? icon : BsInfoCircle;
+    const IconComponent = icon ? icon : Icons.infoMark;
     return (
         <TooltipProvider>
             <Tooltip>

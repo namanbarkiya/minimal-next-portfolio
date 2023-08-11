@@ -3,7 +3,7 @@
 import { useModalStore } from "@/hooks/use-modal-store";
 
 import { Modal } from "@/components/ui/modal";
-import { SuccessAnimatedIcon } from "@/components/icons";
+import { Icons } from "@/components/icons";
 
 export const SuccessModal = () => {
     const modalStore = useModalStore();
@@ -16,7 +16,7 @@ export const SuccessModal = () => {
             onClose={modalStore.onClose}
         >
             <div className="flex flex-col justify-center items-center gap-3 md:flex-row pb-2">
-                <SuccessAnimatedIcon />
+                <Icons.successAnimated />
                 <div className="flex flex-col justify-center items-center md:items-start">
                     <h1 className="font-heading text-2xl sm:text-3xl md:text-3xl lg:text-4xl">
                         Thankyou!

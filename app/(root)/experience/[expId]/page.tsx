@@ -2,8 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { HiOutlineExternalLink } from "react-icons/hi";
-import { AiFillStar } from "react-icons/ai";
 
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
@@ -49,7 +47,7 @@ export default function Experience({ params }: ExperiencePageProps) {
                     {exp.companyName}
                     <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
                         <Link href={exp.websiteLink} target="_blank">
-                            <HiOutlineExternalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
+                            <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
                         </Link>
                     </CustomTooltip>
                 </h1>
@@ -111,7 +109,7 @@ export default function Experience({ params }: ExperiencePageProps) {
                 {exp.pagesInfoArr.map((page, ind) => (
                     <div key={ind}>
                         <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
-                            <AiFillStar className="h-5 w-5 mr-2" /> {page.title}
+                            <Icons.star className="h-5 w-5 mr-2" /> {page.title}
                         </h3>
                         <div>
                             <p>{page.description}</p>
