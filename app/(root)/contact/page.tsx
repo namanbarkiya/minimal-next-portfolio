@@ -1,12 +1,16 @@
 import React from "react";
 
-import { ContactForm } from "@/components/forms/contact-form";
 import PageHeader from "@/components/page-header";
+import { ContactForm } from "@/components/forms/contact-form";
+import { pagesConfig } from "@/config/pages";
 
 export default function ContactPage() {
     return (
         <>
-            <PageHeader title="Contact Me" description="Contact me page" />
+            <PageHeader
+                title={pagesConfig.contact.title}
+                description={pagesConfig.contact.description}
+            />
             <div className="flex justify-center min-w-full">
                 <div className="flex w-[40rem]">
                     <ContactForm />

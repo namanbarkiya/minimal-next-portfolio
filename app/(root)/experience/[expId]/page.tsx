@@ -7,9 +7,9 @@ import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { cn, formatDateFromObj } from "@/lib/utils";
 import { Experiences } from "@/config/experience";
-import namanImg from "../../../../public/naman-img.png";
+import namanImg from "@/public/naman-img.png";
 import ChipContainer from "@/components/chip-container";
-import ExperienceDescription from "@/components/exp-desc/exp-desc";
+import ExperienceDescription from "@/components/exp-desc";
 import CustomTooltip from "@/components/custom-tooltip";
 
 interface ExperiencePageProps {

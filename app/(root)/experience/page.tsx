@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import ProjectCard from "@/components/project-card";
 import PageHeader from "@/components/page-header";
 import { Experiences } from "@/config/experience";
+import { pagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
     title: "Cards",
@@ -29,8 +30,8 @@ export default function ExperiencePage() {
     return (
         <>
             <PageHeader
-                title="Experience"
-                description="this is the experience page"
+                title={pagesConfig.experience.title}
+                description={pagesConfig.experience.description}
             />
             <div className="container items-start justify-center gap-6 rounded-lg p-8 sm:grid md:grid-cols-2 lg:grid-cols-3">
                 {Experiences.map((exp) => (
