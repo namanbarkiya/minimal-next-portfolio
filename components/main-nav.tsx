@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
+import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import { Norican } from "next/font/google";
 
 import { cn } from "@/lib/utils";
@@ -25,6 +25,11 @@ const norican = Norican({
 export function MainNav({ items, children }: MainNavProps) {
     const segment = useSelectedLayoutSegment();
     const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
+    const pathname = usePathname();
+
+    React.useEffect(() => {
+        setShowMobileMenu(false);
+    }, [pathname]);
 
     return (
         <div className="flex gap-6 md:gap-10">
