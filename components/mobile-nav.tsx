@@ -1,13 +1,22 @@
 import * as React from "react";
 import Link from "next/link";
+import { Norican } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 import { useLockBody } from "@/hooks/use-lock-body";
+import { siteConfig } from "@/config/site";
 
 interface MobileNavProps {
     items: any[];
     children?: React.ReactNode;
 }
+
+const norican = Norican({
+    weight: ["400"],
+    style: ["normal"],
+    subsets: ["latin"],
+    display: "swap",
+});
 
 export function MobileNav({ items, children }: MobileNavProps) {
     useLockBody();
@@ -20,8 +29,9 @@ export function MobileNav({ items, children }: MobileNavProps) {
         >
             <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
                 <Link href="/" className="flex items-center space-x-2">
-                    {/* <Icons.logo /> */}
-                    <span className="font-bold">Naman Barkiya</span>
+                    <span className={cn(norican.className, "text-2xl")}>
+                        {siteConfig.name}
+                    </span>
                 </Link>
                 <nav className="grid grid-flow-row auto-rows-max text-sm">
                     {items.map((item, index) => (

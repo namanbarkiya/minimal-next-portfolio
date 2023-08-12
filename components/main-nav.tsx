@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
+import { Norican } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
@@ -14,6 +15,13 @@ interface MainNavProps {
     children?: React.ReactNode;
 }
 
+const norican = Norican({
+    weight: ["400"],
+    style: ["normal"],
+    subsets: ["latin"],
+    display: "swap",
+});
+
 export function MainNav({ items, children }: MainNavProps) {
     const segment = useSelectedLayoutSegment();
     const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
@@ -21,8 +29,7 @@ export function MainNav({ items, children }: MainNavProps) {
     return (
         <div className="flex gap-6 md:gap-10">
             <Link href="/" className="hidden items-center space-x-2 md:flex">
-                {/* <Icons.logo /> */}
-                <span className="hidden font-bold sm:inline-block">
+                <span className={cn(norican.className, "text-2xl")}>
                     {siteConfig.name}
                 </span>
             </Link>

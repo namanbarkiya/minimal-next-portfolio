@@ -4,7 +4,6 @@ import {
     Check,
     ChevronLeft,
     ChevronRight,
-    Command,
     CreditCard,
     File,
     FileText,
@@ -54,7 +53,6 @@ import {
 import { SiGmail, SiLinkedin, SiTwitter } from "react-icons/si";
 
 export const Icons = {
-    logo: Command,
     close: X,
     spinner: Loader2,
     chevronLeft: ChevronLeft,
@@ -134,6 +132,7 @@ export const Icons = {
                 width="5rem"
                 viewBox="0 0 48 48"
                 aria-hidden="true"
+                {...props}
             >
                 <circle
                     className="circle"
