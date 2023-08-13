@@ -101,8 +101,7 @@ export default async function IndexPage() {
                             GitHub
                         </Link>
                         <Link
-                            href={"siteConfig.links.github"}
-                            target="_blank"
+                            href={"/contact"}
                             rel="noreferrer"
                             className={cn(
                                 buttonVariants({
