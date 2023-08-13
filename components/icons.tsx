@@ -1,3 +1,11 @@
+import { BiLaugh, BiSolidUser } from "react-icons/bi";
+import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
+import { AiFillStar } from "react-icons/ai";
+import {
+    HiOutlineExternalLink,
+    HiOutlineLink,
+    HiBriefcase,
+} from "react-icons/hi";
 import {
     AlertTriangle,
     ArrowRight,
@@ -24,10 +32,6 @@ import {
     Menu,
     ChevronDown,
 } from "lucide-react";
-import { BiLaugh } from "react-icons/bi";
-import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
-import { HiOutlineExternalLink, HiOutlineLink } from "react-icons/hi";
-import { AiFillStar } from "react-icons/ai";
 import {
     SiAmazonaws,
     SiAngular,
@@ -49,8 +53,10 @@ import {
     SiSocketdotio,
     SiTailwindcss,
     SiTypescript,
+    SiGmail,
+    SiLinkedin,
+    SiTwitter,
 } from "react-icons/si";
-import { SiGmail, SiLinkedin, SiTwitter } from "react-icons/si";
 
 export const Icons = {
     close: X,
@@ -105,7 +111,8 @@ export const Icons = {
     gmail: SiGmail,
     twitter: SiTwitter,
     linkedin: SiLinkedin,
-
+    userFill: BiSolidUser,
+    work: HiBriefcase,
     gitHub: ({ ...props }: LucideProps) => (
         <svg
             aria-hidden="true"

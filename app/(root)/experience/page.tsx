@@ -5,6 +5,7 @@ import ProjectCard from "@/components/project-card";
 import PageHeader from "@/components/page-header";
 import { Experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
     title: "Cards",
@@ -26,6 +27,32 @@ function DemoContainer({
     );
 }
 
+const renderContent = (tabVal: string) => {
+    let expArr = Experiences;
+    if (tabVal === "personal") {
+        expArr = expArr.filter((val) => val.type === "Personal Project");
+    } else if (tabVal === "professional") {
+        expArr = expArr.filter((val) => val.type === "Professional");
+    }
+
+    return (
+        <div className="container items-start justify-center gap-6 rounded-lg p-8 sm:grid md:grid-cols-2 lg:grid-cols-3">
+            {expArr.map((exp) => (
+                <DemoContainer key={exp.id}>
+                    <ProjectCard
+                        id={exp.id}
+                        title={exp.companyName}
+                        description={exp.shortDescription}
+                        bgSrc={exp.companyLogoImg}
+                        chips={exp.category}
+                        type={exp.type}
+                    />
+                </DemoContainer>
+            ))}
+        </div>
+    );
+};
+
 export default function ExperiencePage() {
     return (
         <>
@@ -33,19 +60,22 @@ export default function ExperiencePage() {
                 title={pagesConfig.experience.title}
                 description={pagesConfig.experience.description}
             />
-            <div className="container items-start justify-center gap-6 rounded-lg p-8 sm:grid md:grid-cols-2 lg:grid-cols-3">
-                {Experiences.map((exp) => (
-                    <DemoContainer key={exp.id}>
-                        <ProjectCard
-                            id={exp.id}
-                            title={exp.companyName}
-                            description={exp.shortDescription}
-                            bgSrc={exp.companyLogoImg}
-                            chips={exp.category}
-                        />
-                    </DemoContainer>
-                ))}
-            </div>
+            <Tabs defaultValue="all" className="w-full">
+                <TabsList className="conatiner grid max-w-[30rem] grid-cols-3">
+                    <TabsTrigger value="all">All</TabsTrigger>
+                    <TabsTrigger value="personal">Personal</TabsTrigger>
+                    <TabsTrigger value="professional">Professional</TabsTrigger>
+                </TabsList>
+                <TabsContent value="all" className="w-full">
+                    {renderContent("all")}
+                </TabsContent>
+                <TabsContent value="professional">
+                    {renderContent("professional")}
+                </TabsContent>
+                <TabsContent value="personal">
+                    {renderContent("personal")}
+                </TabsContent>
+            </Tabs>
         </>
     );
 }
