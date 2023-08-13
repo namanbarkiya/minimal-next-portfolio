@@ -1,32 +1,32 @@
-export enum ValidSkills {
-    NextJS = "Next.js",
-    React = "React",
-    GraphQL = "GraphQL",
-    NestJS = "Nest.js",
-    ExpressJS = "express.js",
-    NodeJS = "Node.js",
-    MongoDB = "MongoDB",
-    Typescript = "Typescript",
-    Javascript = "Javascript",
-    HTML5 = "HTML 5",
-    CSS3 = "CSS 3",
-    ReactNative = "React Native",
-    Angular = "Angular",
-    Redux = "Redux",
-    SocketIO = "Socket.io",
-    MaterialUI = "Material UI",
-    TailwindCSS = "Tailwind CSS",
-    AWS = "AWS",
-    Bootstrap = "Bootstrap",
-    MySQL = "MySQL",
-}
+export type ValidSkills =
+    | "Next.js"
+    | "React"
+    | "GraphQL"
+    | "Nest.js"
+    | "express.js"
+    | "Node.js"
+    | "MongoDB"
+    | "Typescript"
+    | "Javascript"
+    | "HTML 5"
+    | "CSS 3"
+    | "React Native"
+    | "Angular"
+    | "Redux"
+    | "Socket.io"
+    | "Material UI"
+    | "Tailwind CSS"
+    | "AWS"
+    | "Bootstrap"
+    | "MySQL";
 
-export enum ValidCategory {
-    FullStack = "Full Stack",
-    Frontend = "Frontend",
-    Api = "Api",
-    Backend = "Backend",
-    UIUX = "UI/UX",
-    WebDev = "Web Dev",
-    MobileDev = "Mobile Dev",
-}
+export type ValidCategory =
+    | "Full Stack"
+    | "Frontend"
+    | "Api"
+    | "Backend"
+    | "UI/UX"
+    | "Web Dev"
+    | "Mobile Dev";
+
+export type ValidExpType = "Personal Project" | "Professional";

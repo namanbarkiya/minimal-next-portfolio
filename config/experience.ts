@@ -1,4 +1,4 @@
-import { ValidCategory, ValidSkills } from "./constants";
+import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
 
 interface PagesInfoInterface {
     title: string;
@@ -13,6 +13,7 @@ interface DescriptionDetailsInterface {
 
 interface ExperienceInterface {
     id: string;
+    type: ValidExpType;
     companyName: string;
     category: ValidCategory[];
     shortDescription: string;
@@ -29,22 +30,23 @@ export const Experiences: ExperienceInterface[] = [
     {
         id: "built-design",
         companyName: "Builtdesign",
+        type: "Professional" as ValidExpType, // Convert to string and assert type
         category: [
-            ValidCategory.FullStack,
-            ValidCategory.WebDev,
-            ValidCategory.UIUX,
+            "Full Stack" as ValidCategory,
+            "Web Dev" as ValidCategory,
+            "UI/UX" as ValidCategory,
         ],
         shortDescription:
             "Developed and optimized a high-performing website catering to over 4000 users, emphasizing efficiency and maintainability.",
         websiteLink: "https://builtdesign.in",
         techStack: [
-            ValidSkills.NextJS,
-            ValidSkills.React,
-            ValidSkills.NodeJS,
-            ValidSkills.MongoDB,
-            ValidSkills.GraphQL,
-            ValidSkills.NestJS,
-            ValidSkills.Typescript,
+            "Next.js" as ValidSkills,
+            "React" as ValidSkills,
+            "Node.js" as ValidSkills,
+            "MongoDB" as ValidSkills,
+            "GraphQL" as ValidSkills,
+            "Nest.js" as ValidSkills,
+            "Typescript" as ValidSkills,
         ],
         startDate: new Date("2021-07-01"),
         endDate: new Date("2022-07-01"),
@@ -100,23 +102,24 @@ export const Experiences: ExperienceInterface[] = [
     {
         id: "the-super-quotes",
         companyName: "The Super Quotes",
+        type: "Professional" as ValidExpType,
         category: [
-            ValidCategory.MobileDev,
-            ValidCategory.Api,
-            ValidCategory.UIUX,
+            "Mobile Dev" as ValidCategory,
+            "Api" as ValidCategory,
+            "UI/UX" as ValidCategory,
         ],
         shortDescription:
             "Developed and optimized a high-performing website catering to over 4000 users, emphasizing efficiency and maintainability.",
         websiteLink:
             "https://play.google.com/store/apps/details?id=com.thesuperlife",
         techStack: [
-            ValidSkills.ReactNative,
-            ValidSkills.NextJS,
-            ValidSkills.React,
-            ValidSkills.NodeJS,
-            ValidSkills.MongoDB,
-            ValidSkills.NestJS,
-            ValidSkills.Typescript,
+            "React Native" as ValidSkills,
+            "Next.js" as ValidSkills,
+            "React" as ValidSkills,
+            "Node.js" as ValidSkills,
+            "MongoDB" as ValidSkills,
+            "Nest.js" as ValidSkills,
+            "Typescript" as ValidSkills,
         ],
         startDate: new Date("2021-07-01"),
         endDate: new Date("2022-07-01"),
@@ -172,22 +175,23 @@ export const Experiences: ExperienceInterface[] = [
     {
         id: "builtdesign-blogs",
         companyName: "Builtdesign Blogs",
+        type: "Professional" as ValidExpType,
         category: [
-            ValidCategory.MobileDev,
-            ValidCategory.Api,
-            ValidCategory.UIUX,
+            "Mobile Dev" as ValidCategory,
+            "Api" as ValidCategory,
+            "UI/UX" as ValidCategory,
         ],
         shortDescription:
             "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
         websiteLink: "https://blog.builtdesign.in",
         techStack: [
-            ValidSkills.ReactNative,
-            ValidSkills.NextJS,
-            ValidSkills.React,
-            ValidSkills.NodeJS,
-            ValidSkills.MongoDB,
-            ValidSkills.NestJS,
-            ValidSkills.Typescript,
+            "React Native" as ValidSkills,
+            "Next.js" as ValidSkills,
+            "React" as ValidSkills,
+            "Node.js" as ValidSkills,
+            "MongoDB" as ValidSkills,
+            "Nest.js" as ValidSkills,
+            "Typescript" as ValidSkills,
         ],
         startDate: new Date("2022-03-01"),
         endDate: new Date("2022-07-01"),
@@ -236,22 +240,23 @@ export const Experiences: ExperienceInterface[] = [
     {
         id: "apex-shopping",
         companyName: "Apex Shopping App",
+        type: "Personal Project" as ValidExpType,
         category: [
-            ValidCategory.MobileDev,
-            ValidCategory.Api,
-            ValidCategory.UIUX,
+            "Mobile Dev" as ValidCategory,
+            "Api" as ValidCategory,
+            "UI/UX" as ValidCategory,
         ],
         shortDescription:
             "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
         websiteLink: "https://github.com/namanbarkiya/apex-shopping-app",
         techStack: [
-            ValidSkills.ReactNative,
-            ValidSkills.NextJS,
-            ValidSkills.React,
-            ValidSkills.NodeJS,
-            ValidSkills.MongoDB,
-            ValidSkills.NestJS,
-            ValidSkills.Typescript,
+            "React Native" as ValidSkills,
+            "Next.js" as ValidSkills,
+            "React" as ValidSkills,
+            "Node.js" as ValidSkills,
+            "MongoDB" as ValidSkills,
+            "Nest.js" as ValidSkills,
+            "Typescript" as ValidSkills,
         ],
         startDate: new Date("2021-07-14"),
         endDate: new Date("2022-07-01"),
