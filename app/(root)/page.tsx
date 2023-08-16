@@ -20,6 +20,8 @@ import {
     DropdownMenuLabel,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { featuredExperiences } from "@/config/experience";
+import ProjectCard from "@/components/project-card";
 
 export default async function IndexPage() {
     return (
@@ -116,8 +118,8 @@ export default async function IndexPage() {
                 </div>
             </section>
             <section
-                id="features"
-                className="container space-y-6 bg-slate-50 dark:bg-transparent -mt-20 py-10 md:py-12 lg:py-24"
+                id="skills"
+                className="container space-y-6 bg-slate-50 dark:bg-transparent -mt-20 py-10 mb-32 md:py-12 lg:py-24"
             >
                 <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                     <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
@@ -133,11 +135,39 @@ export default async function IndexPage() {
                         <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
                     </Button>
                 </Link>
-                <div className="mx-auto text-center md:max-w-[58rem]">
+                {/* <div className="mx-auto text-center md:max-w-[58rem]">
                     <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                         See all the relevant skills.
                     </p>
+                </div> */}
+            </section>
+            <section
+                id="experience"
+                className="container space-y-6 dark:bg-transparent -mt-20 py-10 mb-20 md:py-12 lg:py-24"
+            >
+                <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+                    <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+                        {pagesConfig.experience.title}
+                    </h2>
+                    <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                        {pagesConfig.experience.featuredDescription}
+                    </p>
                 </div>
+                <div className="mx-auto grid justify-center gap-4  md:w-full lg:grid-cols-3">
+                    {featuredExperiences.map((exp) => (
+                        <ProjectCard key={exp.id} project={exp} />
+                    ))}
+                </div>
+                <Link href="/experience" className="flex justify-center">
+                    <Button variant={"outline"} className="rounded-xl">
+                        <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+                    </Button>
+                </Link>
+                {/* <div className="mx-auto text-center md:max-w-[58rem]">
+                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                        See all the relevant experiences.
+                    </p>
+                </div> */}
             </section>
         </>
     );

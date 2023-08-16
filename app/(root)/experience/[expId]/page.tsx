@@ -43,13 +43,24 @@ export default function Experience({ params }: ExperiencePageProps) {
                 >
                     {formatDateFromObj(exp.startDate)}
                 </time>
-                <h1 className="flex items-center mt-2 font-heading text-4xl leading-tight lg:text-5xl">
+                <h1 className="flex items-center justify-between mt-2 font-heading text-4xl leading-tight lg:text-5xl">
                     {exp.companyName}
-                    <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
-                        <Link href={exp.websiteLink} target="_blank">
-                            <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
-                        </Link>
-                    </CustomTooltip>
+                    <div className="flex items-center">
+                        {exp.githubLink && (
+                            <CustomTooltip text="Link to the source code.">
+                                <Link href={exp.githubLink} target="_blank">
+                                    <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
+                                </Link>
+                            </CustomTooltip>
+                        )}
+                        {exp.websiteLink && (
+                            <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
+                                <Link href={exp.websiteLink} target="_blank">
+                                    <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
+                                </Link>
+                            </CustomTooltip>
+                        )}
+                    </div>
                 </h1>
                 <ChipContainer textArr={exp.category} />
                 <div className="mt-4 flex space-x-4">

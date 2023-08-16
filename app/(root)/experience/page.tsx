@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Examples of cards built using the components.",
 };
 
-function DemoContainer({
+function ProjectContainer({
     className,
     ...props
 }: React.HTMLAttributes<HTMLDivElement>) {
@@ -38,16 +38,9 @@ const renderContent = (tabVal: string) => {
     return (
         <div className="container items-start justify-center gap-6 rounded-lg p-8 sm:grid md:grid-cols-2 lg:grid-cols-3">
             {expArr.map((exp) => (
-                <DemoContainer key={exp.id}>
-                    <ProjectCard
-                        id={exp.id}
-                        title={exp.companyName}
-                        description={exp.shortDescription}
-                        bgSrc={exp.companyLogoImg}
-                        chips={exp.category}
-                        type={exp.type}
-                    />
-                </DemoContainer>
+                <ProjectContainer key={exp.id}>
+                    <ProjectCard project={exp} />
+                </ProjectContainer>
             ))}
         </div>
     );

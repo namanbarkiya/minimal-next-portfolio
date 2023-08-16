@@ -1,10 +1,12 @@
-interface PagesConfig {
-    [key: string]: {
+import { ValidPages } from "./constants";
+
+type PagesConfig = {
+    [key in ValidPages]: {
         title: string;
         description: string;
         featuredDescription: string;
     };
-}
+};
 
 export const pagesConfig: PagesConfig = {
     skills: {
@@ -13,12 +15,12 @@ export const pagesConfig: PagesConfig = {
         featuredDescription: "This is a description for featured content",
     },
     experience: {
-        title: "experience",
+        title: "Experience",
         description: "This is experience page",
         featuredDescription: "This is a description for featured content",
     },
     contact: {
-        title: "contact",
+        title: "Contact",
         description: "This is contact page",
         featuredDescription: "This is a description for featured content",
     },

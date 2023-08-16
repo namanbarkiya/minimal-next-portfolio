@@ -30,3 +30,5 @@ export type ValidCategory =
     | "Mobile Dev";
 
 export type ValidExpType = "Personal Project" | "Professional";
+
+export type ValidPages = "skills" | "experience" | "contact";
