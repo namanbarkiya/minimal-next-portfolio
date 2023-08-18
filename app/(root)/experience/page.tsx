@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-import { cn } from "@/lib/utils";
 import ProjectCard from "@/components/project-card";
 import PageHeader from "@/components/page-header";
+import { cn } from "@/lib/utils";
 import { Experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
-    title: "Cards",
+    title: "Experience",
     description: "Examples of cards built using the components.",
 };
 

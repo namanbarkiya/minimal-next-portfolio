@@ -18,6 +18,7 @@ export type ValidSkills =
     | "Tailwind CSS"
     | "AWS"
     | "Bootstrap"
+    | "Google Auth"
     | "MySQL";
 
 export type ValidCategory =
