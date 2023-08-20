@@ -11,8 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-    console.log(process.env.NODEMAILER_EMAIL);
-    console.log(process.env.NODEMAILER_PWD);
     return (
         <>
             <PageHeader

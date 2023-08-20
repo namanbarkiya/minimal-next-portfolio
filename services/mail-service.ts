@@ -21,12 +21,14 @@ export async function sendMail(
         text: `message from ${name}: ${message}. Email: ${email}, Social Link: ${socialLink}`,
     };
 
-    transporter.sendMail(mailOptions, function (error: any, info: any) {
-        if (error) {
-            throw new Error(error);
-        } else {
-            console.log("Email Sent");
-            return true;
-        }
+    await new Promise((resolve, reject) => {
+        transporter.sendMail(mailOptions, function (err: any, info: any) {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                resolve(info);
+            }
+        });
     });
 }

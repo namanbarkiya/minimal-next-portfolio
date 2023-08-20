@@ -53,16 +53,6 @@ export function ContactForm() {
             body: JSON.stringify(values),
         });
 
-        let val = process.env.NODEMAILER_EMAIL || "test";
-        val += process.env.NODEMAILER_PWD || "test";
-        const test_res = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(val),
-        });
-
         form.reset();
 
         if (response.status === 200) {
