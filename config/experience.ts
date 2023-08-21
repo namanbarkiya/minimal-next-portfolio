@@ -110,7 +110,7 @@ export const Experiences: ExperienceInterface[] = [
             "UI/UX" as ValidCategory,
         ],
         shortDescription:
-            "Developed and optimized a high-performing website catering to over 4000 users, emphasizing efficiency and maintainability.",
+            "Elevated The Super Quotes app with JavaScript, React Native, APIs, Redux magic, and Google Play Store debut.",
         websiteLink:
             "https://play.google.com/store/apps/details?id=com.thesuperlife",
         techStack: [
@@ -389,8 +389,7 @@ export const Experiences: ExperienceInterface[] = [
         ],
         shortDescription:
             "Created a dashboard project using React and Tailwind CSS, focusing on UI design and routing implementation.",
-        websiteLink: "", // You can fill this in later
-        githubLink: "", // You can fill this in later
+        websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
         techStack: [
             "React" as ValidSkills,
             "Tailwind CSS" as ValidSkills,
@@ -431,6 +430,63 @@ export const Experiences: ExperienceInterface[] = [
                 "Designed UI components to provide an intuitive and visually pleasing experience.",
                 "Focused on implementing a smooth routing system to simulate real-world use cases.",
                 "Enhanced my skills in UI design, routing, and component architecture.",
+            ],
+        },
+    },
+    {
+        id: "inscript-hindi-typing",
+        companyName: "Inscript Hindi Typing",
+        type: "Personal Project" as ValidExpType,
+        category: ["Web Dev" as ValidCategory, "UI/UX" as ValidCategory],
+        shortDescription:
+            "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
+        websiteLink: "https://hindityping.namanbarkiya.xyz", // You can fill this in later
+        githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard", // You can fill this in later
+        techStack: [
+            "HTML" as ValidSkills,
+            "CSS" as ValidSkills,
+            "Local Storage" as ValidSkills,
+            "UI/UX Design" as ValidSkills,
+            "Web Development" as ValidSkills,
+        ],
+        startDate: new Date("2022-05-01"),
+        endDate: new Date("2022-05-01"), // You can fill this in later
+        companyLogoImg: "/experience/hindi-keyboard/logo.png",
+        pagesInfoArr: [
+            {
+                title: "Typing Interface",
+                description:
+                    "Minimal and user-friendly Inscript Hindi typing area",
+                imgArr: ["/experience/hindi-keyboard/web_1.png"],
+            },
+            {
+                title: "Copy and Download the file",
+                description:
+                    "Minimal and user-friendly Inscript Hindi typing area",
+                imgArr: [
+                    "/experience/hindi-keyboard/web_2.png",
+                    "/experience/hindi-keyboard/web_3.png",
+                ],
+            },
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "The 'Inscript Hindi Typing Website' project emerged from the need to provide a simple and accessible tool for Hindi writers, especially those in digital news and media, who wished to convey data in Hindi.",
+                "Recognizing the challenges posed by complex software in the market, I set out to create a minimalistic typing area that catered to the needs of a vast community of Hindi typists in India.",
+                "The project was designed to address the specific requirements of users familiar with the Inscript keyboard layout, mapping English and Hindi alphabets for seamless typing. The intuitive interface allowed users to effortlessly switch between languages, streamlining the process of content creation.",
+                "Leveraging HTML and CSS, I crafted the website's UI to ensure a user-friendly experience. Additionally, Local Storage was utilized to enable users to save and retrieve their work, enhancing convenience and productivity.",
+                "The website's focus on user experience and simplicity proved to be a key factor in its popularity among Hindi writers. By offering a tool that reduced the barriers to entry, I contributed to the digital empowerment of Hindi typists who previously faced challenges in conveying their message effectively.",
+                "This project marked one of my initial forays into web development and highlighted the transformative potential of technology in addressing real-world challenges.",
+            ],
+            bullets: [
+                "Developed a user-friendly website for Inscript Hindi typing.",
+                "Catered to the needs of Hindi writers in digital news and media.",
+                "Created a minimalistic and intuitive typing interface for the Inscript keyboard layout.",
+                "Mapped English and Hindi alphabets to provide a seamless typing experience.",
+                "Utilized HTML and CSS to design a user-friendly UI.",
+                "Implemented Local Storage to enable users to save and retrieve their work.",
+                "Contributed to the digital empowerment of Hindi typists by offering a simple tool.",
+                "Marked one of my first web development projects, showcasing technology's potential for addressing real-world needs.",
             ],
         },
     },
