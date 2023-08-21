@@ -63,8 +63,10 @@ export function ContactForm() {
     return (
         <Form {...form}>
             <form
-                onSubmit={form.handleSubmit(onSubmit)}
+                // onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-8 min-w-full"
+                method="POST"
+                data-netlify="true"
             >
                 <FormField
                     control={form.control}
