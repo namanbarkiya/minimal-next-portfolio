@@ -94,7 +94,7 @@ export default async function IndexPage() {
                         and creative abilities, with a heavy emphasis on writing
                         well-documented code.
                     </p> */}
-                    <div className="space-x-4 mt-10">
+                    <div className="flex flex-col  mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
                         <Link
                             href={"https://github.com/namanbarkiya"}
                             target="_blank"
