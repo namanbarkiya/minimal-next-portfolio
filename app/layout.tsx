@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModalProvider } from "@/providers/modal-provider";
+import { Analytics } from "@/components/analytics";
 
 const fontSans = FontSans({
     subsets: ["latin"],
@@ -89,7 +90,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     enableSystem
                 >
                     {children}
-                    {/* <Analytics /> */}
+                    <Analytics />
                     <Toaster />
                     <ModalProvider />
                     {/* <TailwindIndicator /> */}
