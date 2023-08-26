@@ -45,18 +45,22 @@ export function ContactForm() {
 
     // 2. Define a submit handler.
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        const response = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(values),
-        });
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(values),
+            });
 
-        form.reset();
+            form.reset();
 
-        if (response.status === 200) {
-            storeModal.onOpen();
+            if (response.status === 200) {
+                storeModal.onOpen();
+            }
+        } catch (err) {
+            console.log("Err!", err);
         }
     }
 

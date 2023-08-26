@@ -100,7 +100,7 @@ export default async function IndexPage() {
                             target="_blank"
                             className={cn(buttonVariants({ size: "lg" }))}
                         >
-                            GitHub
+                            <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
                         </Link>
                         <Link
                             href={"/contact"}
