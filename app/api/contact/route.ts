@@ -1,4 +1,3 @@
-import { sendMail } from "@/services/mail-service";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -6,7 +5,9 @@ export async function POST(req: Request) {
         const body = await req.json();
         const { name, message, social, email } = body;
 
-        sendMail(name, message, social, email);
+        const res = await fetch(
+            `${process.env.GOOGLE_FORM_LINK}/formResponse?entry.150239605=${name}&entry.2001119656=${email}&entry.1488410870=${message}&entry.603167420=${social}`
+        );
 
         return NextResponse.json("Success!");
     } catch (error) {
