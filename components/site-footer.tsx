@@ -9,7 +9,7 @@ import { buttonVariants } from "@/components/ui/button";
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
     return (
         <footer className={cn(className)}>
-            <div className="container flex items-center justify-center gap-8 py-10 md:h-24">
+            <div className="container flex items-center justify-center gap-8 mt-10 py-10 md:h-24">
                 {SocialLinks.map((item, ind) => (
                     <CustomTooltip
                         icon={item.icon}

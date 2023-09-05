@@ -119,14 +119,14 @@ export default async function IndexPage() {
             </section>
             <section
                 id="skills"
-                className="container space-y-6 bg-slate-50 dark:bg-transparent -mt-20 py-10 mb-32 md:py-12 lg:py-24"
+                className="container space-y-6 bg-slate-50 dark:bg-transparent py-10 mt-10"
             >
                 <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                     <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
                         {pagesConfig.skills.title}
                     </h2>
                     <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        {pagesConfig.skills.featuredDescription}
+                        {pagesConfig.skills.description}
                     </p>
                 </div>
                 <SkillsCard skills={featuredSkills} />
@@ -143,14 +143,14 @@ export default async function IndexPage() {
             </section>
             <section
                 id="experience"
-                className="container space-y-6 dark:bg-transparent -mt-20 py-10 mb-20 md:py-12 lg:py-24"
+                className="container space-y-6 dark:bg-transparent py-10 mt-14"
             >
                 <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                     <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
                         {pagesConfig.experience.title}
                     </h2>
                     <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        {pagesConfig.experience.featuredDescription}
+                        {pagesConfig.experience.description}
                     </p>
                 </div>
                 <div className="mx-auto grid justify-center gap-4  md:w-full lg:grid-cols-3">

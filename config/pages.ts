@@ -4,24 +4,24 @@ type PagesConfig = {
     [key in ValidPages]: {
         title: string;
         description: string;
-        featuredDescription: string;
+        // featuredDescription: string;
     };
 };
 
 export const pagesConfig: PagesConfig = {
     skills: {
         title: "Skills",
-        description: "This is skills page",
-        featuredDescription: "This is a description for featured content",
+        description: "Key skills that define my professional identity.",
+        // featuredDescription: "Skill Showcase",
     },
     experience: {
         title: "Experience",
-        description: "This is experience page",
-        featuredDescription: "This is a description for featured content",
+        description: "Highlighting career journey and impactful projects.",
+        // featuredDescription: "Work Timeline",
     },
     contact: {
         title: "Contact",
-        description: "This is contact page",
-        featuredDescription: "This is a description for featured content",
+        description: "Let's connect and explore collaborations.",
+        // featuredDescription: "Get in Touch",
     },
 };
