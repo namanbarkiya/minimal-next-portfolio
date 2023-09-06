@@ -55,7 +55,7 @@ export default async function IndexPage() {
                     <h3 className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl">
                         Full Stack Developer
                     </h3>
-                    <Accordion
+                    {/* <Accordion
                         type="single"
                         collapsible
                         className="flex items-center w-full max-w-[35rem]"
@@ -86,7 +86,7 @@ export default async function IndexPage() {
                                 </DropdownMenuLabel>
                             </DropdownMenuContent>
                         </DropdownMenu>
-                    </Accordion>
+                    </Accordion> */}
 
                     {/* <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
                         Full-stack web developer with two years&apos; experience
@@ -115,6 +115,7 @@ export default async function IndexPage() {
                             Contact Me
                         </Link>
                     </div>
+                    <Icons.chevronDown className="h-6 w-6 mt-10" />
                 </div>
             </section>
             <section
