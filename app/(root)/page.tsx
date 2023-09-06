@@ -8,18 +8,18 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredSkills } from "@/config/skills";
 import { Icons } from "@/components/icons";
 import { pagesConfig } from "@/config/pages";
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuLabel,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+// import {
+//     Accordion,
+//     AccordionContent,
+//     AccordionItem,
+//     AccordionTrigger,
+// } from "@/components/ui/accordion";
+// import {
+//     DropdownMenu,
+//     DropdownMenuContent,
+//     DropdownMenuLabel,
+//     DropdownMenuTrigger,
+// } from "@/components/ui/dropdown-menu";
 import { featuredExperiences } from "@/config/experience";
 import ProjectCard from "@/components/project-card";
 

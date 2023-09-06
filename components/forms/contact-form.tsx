@@ -16,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useModalStore } from "@/hooks/use-modal-store";
+import { Icons } from "../icons";
 
 const formSchema = z.object({
     name: z.string().min(3, {
@@ -45,23 +46,28 @@ export function ContactForm() {
 
     // 2. Define a submit handler.
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        try {
-            const response = await fetch("/api/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(values),
-            });
+        // try {
+        //     const response = await fetch("/api/contact", {
+        //         method: "POST",
+        //         headers: {
+        //             "Content-Type": "application/json",
+        //         },
+        //         body: JSON.stringify(values),
+        //     });
 
-            form.reset();
+        //     form.reset();
 
-            if (response.status === 200) {
-                storeModal.onOpen();
-            }
-        } catch (err) {
-            console.log("Err!", err);
-        }
+        //     if (response.status === 200) {
+        storeModal.onOpen({
+            title: "Thankyou!",
+            description:
+                "Your message has been received! I appreciate your contact and will get back to you shortly.",
+            icon: Icons.successAnimated,
+        });
+        //     }
+        // } catch (err) {
+        //     console.log("Err!", err);
+        // }
     }
 
     return (
