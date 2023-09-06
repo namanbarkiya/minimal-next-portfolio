@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import { SuccessModal } from "@/components/modals/success-modal";
+import { CustomModal } from "@/components/modals/custom-modal";
 
 export const ModalProvider = () => {
     const [isMounted, setIsMounted] = useState(false);
@@ -17,7 +17,7 @@ export const ModalProvider = () => {
 
     return (
         <>
-            <SuccessModal />
+            <CustomModal />
         </>
     );
 };

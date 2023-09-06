@@ -1,11 +1,9 @@
 "use client";
 
 import { useModalStore } from "@/hooks/use-modal-store";
-
 import { Modal } from "@/components/ui/modal";
-import { Icons } from "@/components/icons";
 
-export const SuccessModal = () => {
+export const CustomModal = () => {
     const modalStore = useModalStore();
 
     return (

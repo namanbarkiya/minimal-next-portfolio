@@ -1,7 +1,7 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import { Button } from "@/components/ui/button";
@@ -46,28 +46,28 @@ export function ContactForm() {
 
     // 2. Define a submit handler.
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        // try {
-        //     const response = await fetch("/api/contact", {
-        //         method: "POST",
-        //         headers: {
-        //             "Content-Type": "application/json",
-        //         },
-        //         body: JSON.stringify(values),
-        //     });
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(values),
+            });
 
-        //     form.reset();
+            form.reset();
 
-        //     if (response.status === 200) {
-        storeModal.onOpen({
-            title: "Thankyou!",
-            description:
-                "Your message has been received! I appreciate your contact and will get back to you shortly.",
-            icon: Icons.successAnimated,
-        });
-        //     }
-        // } catch (err) {
-        //     console.log("Err!", err);
-        // }
+            if (response.status === 200) {
+                storeModal.onOpen({
+                    title: "Thankyou!",
+                    description:
+                        "Your message has been received! I appreciate your contact and will get back to you shortly.",
+                    icon: Icons.successAnimated,
+                });
+            }
+        } catch (err) {
+            console.log("Err!", err);
+        }
     }
 
     return (
