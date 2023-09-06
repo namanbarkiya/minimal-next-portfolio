@@ -24,11 +24,11 @@ export type ValidSkills =
 export type ValidCategory =
     | "Full Stack"
     | "Frontend"
-    | "Api"
     | "Backend"
     | "UI/UX"
     | "Web Dev"
-    | "Mobile Dev";
+    | "Mobile Dev"
+    | "3D Modeling";
 
 export type ValidExpType = "Personal Project" | "Professional";
 
