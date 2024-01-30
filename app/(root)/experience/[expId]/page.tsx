@@ -7,7 +7,7 @@ import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { cn, formatDateFromObj } from "@/lib/utils";
 import { Experiences } from "@/config/experience";
-import namanImg from "@/public/naman-img.png";
+import namanImg from "@/public/naman-img.jpg";
 import ChipContainer from "@/components/chip-container";
 import ExperienceDescription from "@/components/exp-desc";
 import CustomTooltip from "@/components/custom-tooltip";
@@ -17,6 +17,8 @@ interface ExperiencePageProps {
         expId: string;
     };
 }
+
+const githubUsername = "namanbarkiya";
 
 export default function Experience({ params }: ExperiencePageProps) {
     let exp = Experiences.find((val) => val.id === params.expId);
@@ -65,7 +67,7 @@ export default function Experience({ params }: ExperiencePageProps) {
                 <ChipContainer textArr={exp.category} />
                 <div className="mt-4 flex space-x-4">
                     <Link
-                        href={`https://twitter.com/test`}
+                        href={`https://github.com/${githubUsername}`}
                         className="flex items-center space-x-2 text-sm"
                     >
                         <Image
@@ -77,9 +79,9 @@ export default function Experience({ params }: ExperiencePageProps) {
                         />
 
                         <div className="flex-1 text-left leading-tight">
-                            <p className="font-medium">{"test"}</p>
+                            <p className="font-medium">{"Naman Barkiya"}</p>
                             <p className="text-[12px] text-muted-foreground">
-                                @test
+                                @{githubUsername}
                             </p>
                         </div>
                     </Link>

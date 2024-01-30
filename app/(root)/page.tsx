@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import namanImg from "@/public/naman-img.png";
+import namanImg from "@/public/naman-img.jpg";
 import SkillsCard from "@/components/skills-card";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -41,11 +41,7 @@ export default async function IndexPage() {
                         height={100}
                         width={100}
                         sizes="100vw"
-                        style={{
-                            width: "60%",
-                            maxWidth: "16rem",
-                        }}
-                        className="rounded-full mb-0 p-2 h-auto md:mb-2"
+                        className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary dark:border-white dark:bg-white"
                         alt="naman-barkiya-img"
                     />
                     {/* </div> */}
