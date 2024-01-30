@@ -84,7 +84,7 @@ export function ContactForm() {
                             <FormLabel>Name</FormLabel>
                             <FormControl>
                                 <Input
-                                    placeholder="Enter yout name"
+                                    placeholder="Enter your name"
                                     {...field}
                                 />
                             </FormControl>
@@ -103,7 +103,7 @@ export function ContactForm() {
                             <FormLabel>Email</FormLabel>
                             <FormControl>
                                 <Input
-                                    placeholder="Enter yout email"
+                                    placeholder="Enter your email"
                                     {...field}
                                 />
                             </FormControl>
@@ -119,7 +119,7 @@ export function ContactForm() {
                             <FormLabel>Message</FormLabel>
                             <FormControl>
                                 <Textarea
-                                    placeholder="Enter yout message"
+                                    placeholder="Enter your message"
                                     {...field}
                                 />
                             </FormControl>
