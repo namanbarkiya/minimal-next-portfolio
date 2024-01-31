@@ -2,6 +2,9 @@
 
 This portfolio website is designed to showcase your professional and personal work while adhering to the latest coding patterns and featuring a stunning, minimalistic design.
 
+https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
+
+
 ## Features
 - **Next.js 14**: Utilizing the latest version of Next.js for enhanced performance and features.
 - **UI Library**: Leveraging the power of shadcn UI and Tailwind CSS for a visually appealing and responsive user interface.
