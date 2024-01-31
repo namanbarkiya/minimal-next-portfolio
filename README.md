@@ -1,22 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js 14 Portfolio Website
+
+This portfolio website is designed to showcase your professional and personal work while adhering to the latest coding patterns and featuring a stunning, minimalistic design.
+
+## Features
+- **Next.js 14**: Utilizing the latest version of Next.js for enhanced performance and features.
+- **UI Library**: Leveraging the power of shadcn UI and Tailwind CSS for a visually appealing and responsive user interface.
+- **Google Form Integration**: Seamlessly integrated with Google Forms to store and manage form responses.
+- **Analytics**: Keep track of your website's performance with Google Analytics and Vercel Analytics.
+- **Experience Blogs**: Share your experiences and insights through dedicated blog sections.
+- **Skills Highlights**: Highlight your key skills and expertise to impress visitors.
 
 ## Getting Started
+To get started with your own Next.js 14 Portfolio Website, follow these steps:
 
-First, run the development server:
+1. Copy the contents of `.env.copy` to a new `.env` file and fill in the required information.
+2. Install the project dependencies using one of the following commands:
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+3. Start the development server by running:
+    ```bash
+    npm run dev
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your web browser to see the website in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Now, you're all set to customize and populate your portfolio website with your professional and personal content. Enjoy showcasing your work!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
