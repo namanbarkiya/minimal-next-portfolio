@@ -31,6 +31,11 @@ To get started with your own Next.js 14 Portfolio Website, follow these steps:
 
 Now, you're all set to customize and populate your portfolio website with your professional and personal content. Enjoy showcasing your work!
 
+## Insights
+![Screenshot 2024-02-02 at 3 45 16 AM](https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/3fb9c94d-9d99-4e98-92ea-14aadc91b568)
+![Screenshot 2024-02-02 at 3 47 49 AM](https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/7cfe28cc-b619-4199-9dab-1cf16723b86d)
+
+
 
 ## Learn More
 
