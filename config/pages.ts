@@ -24,4 +24,9 @@ export const pagesConfig: PagesConfig = {
         description: "Let's connect and explore collaborations.",
         // featuredDescription: "Get in Touch",
     },
+    contributions: {
+        title: "Contributions",
+        description: "Open-source contributions and community involvement.",
+        // featuredDescription: "Contributions Showcase",
+    },
 };

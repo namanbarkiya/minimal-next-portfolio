@@ -8,6 +8,10 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredSkills } from "@/config/skills";
 import { Icons } from "@/components/icons";
 import { pagesConfig } from "@/config/pages";
+import { featuredExperiences } from "@/config/experience";
+import ProjectCard from "@/components/project-card";
+import { featuredContributions } from "@/config/contributions";
+import ContributionCard from "@/components/contribution-card";
 // import {
 //     Accordion,
 //     AccordionContent,
@@ -20,13 +24,11 @@ import { pagesConfig } from "@/config/pages";
 //     DropdownMenuLabel,
 //     DropdownMenuTrigger,
 // } from "@/components/ui/dropdown-menu";
-import { featuredExperiences } from "@/config/experience";
-import ProjectCard from "@/components/project-card";
 
 export default async function IndexPage() {
     return (
         <>
-            <section className="space-y-6 pb-8 pt-6 mb-10 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+            <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
                 <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
                     {/* <Link
                         href={"siteConfig.links.twitter"}
@@ -116,7 +118,7 @@ export default async function IndexPage() {
             </section>
             <section
                 id="skills"
-                className="container space-y-6 bg-slate-50 dark:bg-transparent py-10 mt-10"
+                className="container space-y-6 bg-slate-50 dark:bg-transparent py-10"
             >
                 <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                     <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
@@ -140,7 +142,7 @@ export default async function IndexPage() {
             </section>
             <section
                 id="experience"
-                className="container space-y-6 dark:bg-transparent py-10 mt-14"
+                className="container space-y-6 dark:bg-transparent py-10 my-14"
             >
                 <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                     <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
@@ -163,6 +165,32 @@ export default async function IndexPage() {
                 {/* <div className="mx-auto text-center md:max-w-[58rem]">
                     <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                         See all the relevant experiences.
+                    </p>
+                </div> */}
+            </section>
+            <section
+                id="contributions"
+                className="container space-y-6 bg-slate-50 dark:bg-transparent py-10 my-14"
+            >
+                <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+                    <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+                        {pagesConfig.contributions.title}
+                    </h2>
+                    <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                        {pagesConfig.contributions.description}
+                    </p>
+                </div>
+                <div className="mx-auto justify-center gap-4  md:w-full lg:grid-cols-3">
+                    <ContributionCard contributions={featuredContributions} />
+                </div>
+                <Link href="/contributions" className="flex justify-center">
+                    <Button variant={"outline"} className="rounded-xl">
+                        <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+                    </Button>
+                </Link>
+                {/* <div className="mx-auto text-center md:max-w-[58rem]">
+                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                        See all the relevant skills.
                     </p>
                 </div> */}
             </section>
