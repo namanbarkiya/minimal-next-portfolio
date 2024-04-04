@@ -110,7 +110,7 @@ export default async function IndexPage() {
                                 })
                             )}
                         >
-                            Contact Me
+                            <Icons.contact className="w-4 h-4 mr-2" /> Contact
                         </Link>
                     </div>
                     <Icons.chevronDown className="h-6 w-6 mt-10" />

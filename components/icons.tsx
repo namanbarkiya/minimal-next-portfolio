@@ -33,6 +33,7 @@ import {
     ChevronDown,
     BookMarked,
     Building,
+    Phone,
 } from "lucide-react";
 import {
     SiAmazonaws,
@@ -62,6 +63,7 @@ import {
 import { IoIosGitBranch } from "react-icons/io";
 
 export const Icons = {
+    contact: Phone,
     gitRepoIcon: BookMarked,
     gitOrgBuilding: Building,
     gitBranch: IoIosGitBranch,
