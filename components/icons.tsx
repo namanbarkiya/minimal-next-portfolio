@@ -31,6 +31,8 @@ import {
     X,
     Menu,
     ChevronDown,
+    BookMarked,
+    Building,
 } from "lucide-react";
 import {
     SiAmazonaws,
@@ -57,8 +59,12 @@ import {
     SiLinkedin,
     SiTwitter,
 } from "react-icons/si";
+import { IoIosGitBranch } from "react-icons/io";
 
 export const Icons = {
+    gitRepoIcon: BookMarked,
+    gitOrgBuilding: Building,
+    gitBranch: IoIosGitBranch,
     close: X,
     spinner: Loader2,
     chevronLeft: ChevronLeft,
