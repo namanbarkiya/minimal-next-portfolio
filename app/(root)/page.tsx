@@ -12,6 +12,9 @@ import { featuredExperiences } from "@/config/experience";
 import ProjectCard from "@/components/project-card";
 import { featuredContributions } from "@/config/contributions";
 import ContributionCard from "@/components/contribution-card";
+import { HeroImageCard } from "@/components/hero-image-card";
+// import { GlowButton } from "@/components/glow-button";
+// import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 // import {
 //     Accordion,
 //     AccordionContent,
@@ -34,25 +37,26 @@ export default async function IndexPage() {
                         href={"siteConfig.links.twitter"}
                         className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
                         target="_blank"
-                    >
+                        >
                         Follow along on Twitter
                     </Link> */}
                     {/* <div className="max-w-[16rem]"> */}
-                    <Image
+                    {/* <Image
                         src={namanImg}
                         height={100}
                         width={100}
                         sizes="100vw"
                         className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary dark:border-white dark:bg-white"
                         alt="naman-barkiya-img"
-                    />
+                    /> */}
+                    <HeroImageCard />
                     {/* </div> */}
-                    <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+                    {/* <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
                         Naman Barkiya
                     </h1>
                     <h3 className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl">
                         Full Stack Developer
-                    </h3>
+                    </h3> */}
                     {/* <Accordion
                         type="single"
                         collapsible
@@ -93,6 +97,29 @@ export default async function IndexPage() {
                         well-documented code.
                     </p> */}
                     <div className="flex flex-col  mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
+                        {/* <Link
+                            href={"https://github.com/namanbarkiya"}
+                            target="_blank"
+                        >
+                            <HoverBorderGradient
+                                containerClassName="rounded-full"
+                                as="button"
+                                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                            >
+                                <Icons.gitHub className="w-4 h-4 mr-2" />
+                                <span>Github</span>
+                            </HoverBorderGradient>
+                        </Link>
+                        <Link href={"/contact"} rel="noreferrer">
+                            <HoverBorderGradient
+                                containerClassName="rounded-full"
+                                as="button"
+                                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                            >
+                                <Icons.contact className="w-4 h-4 mr-2" />
+                                <span>Contact</span>
+                            </HoverBorderGradient>
+                        </Link> */}
                         <Link
                             href={"https://github.com/namanbarkiya"}
                             target="_blank"
