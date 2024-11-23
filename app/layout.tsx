@@ -7,9 +7,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/common/theme-provider";
 import { ModalProvider } from "@/providers/modal-provider";
-import { Analytics } from "@/components/analytics";
+import { Analytics } from "@/components/common/analytics";
 
 const fontSans = FontSans({
     subsets: ["latin"],
@@ -99,7 +99,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     <Analytics />
                     <Toaster />
                     <ModalProvider />
-                    {/* <TailwindIndicator /> */}
                 </ThemeProvider>
             </body>
             <GoogleAnalytics gaId={GA_ID} />

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
-import PageHeader from "@/components/page-header";
-import SkillsCard from "@/components/skills-card";
+import PageHeader from "@/components/common/page-header";
+import SkillsCard from "@/components/skills/skills-card";
 import { pagesConfig } from "@/config/pages";
 import { skills } from "@/config/skills";
 

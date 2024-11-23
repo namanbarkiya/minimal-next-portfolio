@@ -18,7 +18,7 @@ export default function PageHeader({ title, description }: PageHeaderProps) {
                     </p>
                 </div>
             </div>
-            <hr className="my-8" />
+            <hr className="my-6" />
         </>
     );
 }

@@ -2,7 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-import CustomTooltip from "@/components/custom-tooltip";
+import CustomTooltip from "@/components/ui/custom-tooltip";
 import { SocialLinks } from "@/config/socials";
 import { buttonVariants } from "@/components/ui/button";
 

@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
-import { Icons } from "@/components/icons";
-import ChipContainer from "@/components/chip-container";
+import { Icons } from "@/components/common/icons";
+import ChipContainer from "../ui/chip-container";
 import { ExperienceInterface } from "@/config/experience";
 
 interface ProjectCardProps {
@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
     return (
-        <div className="relative p-6 max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-transparent dark:border-gray-700">
+        <div className="relative p-6 max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-transparent dark:border-gray-700">
             <div className="relative w-full h-[200px]">
                 <Image
                     className="rounded-lg border border-gray-200  dark:border-gray-700 object-cover"

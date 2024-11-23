@@ -3,14 +3,14 @@ import React from "react";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/common/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { cn, formatDateFromObj } from "@/lib/utils";
 import { Experiences } from "@/config/experience";
 import namanImg from "@/public/naman-img.jpg";
-import ChipContainer from "@/components/chip-container";
-import ExperienceDescription from "@/components/exp-desc";
-import CustomTooltip from "@/components/custom-tooltip";
+import ChipContainer from "@/components/ui/chip-container";
+import ExperienceDescription from "@/components/experience/exp-description";
+import CustomTooltip from "@/components/ui/custom-tooltip";
 
 interface ExperiencePageProps {
     params: {

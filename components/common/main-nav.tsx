@@ -6,8 +6,8 @@ import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import { Norican } from "next/font/google";
 
 import { cn } from "@/lib/utils";
-import { Icons } from "@/components/icons";
-import { MobileNav } from "@/components/mobile-nav";
+import { Icons } from "@/components/common/icons";
+import { MobileNav } from "@/components/common/mobile-nav";
 import { siteConfig } from "@/config/site";
 
 interface MainNavProps {

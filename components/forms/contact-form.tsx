@@ -16,7 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useModalStore } from "@/hooks/use-modal-store";
-import { Icons } from "../icons";
+import { Icons } from "../common/icons";
 
 const formSchema = z.object({
     name: z.string().min(3, {

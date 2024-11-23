@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { contributionsInterface } from "@/config/contributions";
-import { Icons } from "./icons";
+import { Icons } from "../common/icons";
 
 interface ContributionCardProps {
     contributions: contributionsInterface[];
@@ -12,7 +12,7 @@ export default function ContributionCard({
     contributions,
 }: ContributionCardProps) {
     return (
-        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] lg:grid-cols-3 static">
+        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 static">
             {contributions.map((contribution, id) => (
                 <Link href={contribution.link} target="_blank" key={id}>
                     <div className="relative rounded-lg border bg-background p-2 hover:bg-accent hover:text-accent-foreground">

@@ -2,16 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 import namanImg from "@/public/naman-img.jpg";
-import SkillsCard from "@/components/skills-card";
+import SkillsCard from "@/components/skills/skills-card";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredSkills } from "@/config/skills";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/common/icons";
 import { pagesConfig } from "@/config/pages";
 import { featuredExperiences } from "@/config/experience";
-import ProjectCard from "@/components/project-card";
+import ProjectCard from "@/components/experience/project-card";
 import { featuredContributions } from "@/config/contributions";
-import ContributionCard from "@/components/contribution-card";
+import ContributionCard from "@/components/contributions/contribution-card";
 // import {
 //     Accordion,
 //     AccordionContent,

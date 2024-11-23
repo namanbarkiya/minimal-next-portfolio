@@ -1,4 +1,3 @@
-// import { Button } from "@/components/ui/button"
 import {
     Tooltip,
     TooltipContent,
@@ -6,7 +5,7 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip";
 import React from "react";
-import { Icons } from "./icons";
+import { Icons } from "../common/icons";
 
 interface CustomTooltipProps {
     children: React.ReactNode;

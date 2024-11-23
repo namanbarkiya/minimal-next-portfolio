@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 
-import ProjectCard from "@/components/project-card";
-import PageHeader from "@/components/page-header";
-import { cn } from "@/lib/utils";
+import ProjectCard from "@/components/experience/project-card";
+import PageHeader from "@/components/common/page-header";
 import { Experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -11,21 +10,6 @@ export const metadata: Metadata = {
     title: "Experience",
     description: "Examples of cards built using the components.",
 };
-
-function ProjectContainer({
-    className,
-    ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
-    return (
-        <div
-            className={cn(
-                "flex items-center justify-center mb-4 md:mb-0 [&>div]:w-full ",
-                className
-            )}
-            {...props}
-        />
-    );
-}
 
 const renderContent = (tabVal: string) => {
     let expArr = Experiences;
@@ -36,11 +20,9 @@ const renderContent = (tabVal: string) => {
     }
 
     return (
-        <div className="container items-start justify-center gap-6 rounded-lg p-8 sm:grid md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto my-4 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 static">
             {expArr.map((exp) => (
-                <ProjectContainer key={exp.id}>
-                    <ProjectCard project={exp} />
-                </ProjectContainer>
+                <ProjectCard project={exp} key={exp.id} />
             ))}
         </div>
     );

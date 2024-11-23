@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
-import PageHeader from "@/components/page-header";
+import PageHeader from "@/components/common/page-header";
 import { pagesConfig } from "@/config/pages";
-import ContributionCard from "@/components/contribution-card";
+import ContributionCard from "@/components/contributions/contribution-card";
 import { contributionsUnsorted } from "@/config/contributions";
 
 export const metadata: Metadata = {
@@ -17,7 +17,12 @@ export default function ContributonsPage() {
                 title={pagesConfig.contributions.title}
                 description={pagesConfig.contributions.description}
             />
-            <ContributionCard contributions={contributionsUnsorted} />
+            <ContributionCard
+                contributions={[
+                    ...contributionsUnsorted,
+                    ...contributionsUnsorted,
+                ]}
+            />
         </>
     );
 }

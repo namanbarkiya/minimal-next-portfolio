@@ -1,5 +1,5 @@
 import React from "react";
-import Chip from "./ui/chip";
+import Chip from "./chip";
 
 interface ChipContainerProps {
     textArr: string[];

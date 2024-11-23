@@ -1,7 +1,7 @@
 import { routesConfig } from "@/config/routes";
-import { MainNav } from "@/components/main-nav";
-import { SiteFooter } from "@/components/site-footer";
-import { ModeToggle } from "@/components/mode-toggle";
+import { MainNav } from "@/components/common/main-nav";
+import { SiteFooter } from "@/components/common/site-footer";
+import { ModeToggle } from "@/components/common/mode-toggle";
 
 interface MarketingLayoutProps {
     children: React.ReactNode;
