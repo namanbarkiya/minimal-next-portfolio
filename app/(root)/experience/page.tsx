@@ -5,6 +5,7 @@ import PageHeader from "@/components/common/page-header";
 import { Experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import PageContainer from "@/components/common/page-container";
 
 export const metadata: Metadata = {
     title: "Experience",
@@ -30,11 +31,10 @@ const renderContent = (tabVal: string) => {
 
 export default function ExperiencePage() {
     return (
-        <>
-            <PageHeader
-                title={pagesConfig.experience.title}
-                description={pagesConfig.experience.description}
-            />
+        <PageContainer
+            title={pagesConfig.experience.title}
+            description={pagesConfig.experience.description}
+        >
             <Tabs defaultValue="all" className="w-full">
                 <TabsList className="conatiner grid max-w-[30rem] grid-cols-3">
                     <TabsTrigger value="all">All</TabsTrigger>
@@ -51,6 +51,6 @@ export default function ExperiencePage() {
                     {renderContent("personal")}
                 </TabsContent>
             </Tabs>
-        </>
+        </PageContainer>
     );
 }

@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import PageHeader from "@/components/common/page-header";
 import { ContactForm } from "@/components/forms/contact-form";
 import { pagesConfig } from "@/config/pages";
+import PageContainer from "@/components/common/page-container";
 
 export const metadata: Metadata = {
     title: "Contact",
@@ -12,14 +13,13 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
     return (
-        <>
-            <PageHeader
-                title={pagesConfig.contact.title}
-                description={pagesConfig.contact.description}
-            />
+        <PageContainer
+            title={pagesConfig.contact.title}
+            description={pagesConfig.contact.description}
+        >
             <div className="flex justify-center w-[40rem]">
                 <ContactForm />
             </div>
-        </>
+        </PageContainer>
     );
 }

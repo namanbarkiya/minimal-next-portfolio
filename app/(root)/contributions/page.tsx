@@ -4,6 +4,7 @@ import PageHeader from "@/components/common/page-header";
 import { pagesConfig } from "@/config/pages";
 import ContributionCard from "@/components/contributions/contribution-card";
 import { contributionsUnsorted } from "@/config/contributions";
+import PageContainer from "@/components/common/page-container";
 
 export const metadata: Metadata = {
     title: "Contributions",
@@ -12,17 +13,16 @@ export const metadata: Metadata = {
 
 export default function ContributonsPage() {
     return (
-        <>
-            <PageHeader
-                title={pagesConfig.contributions.title}
-                description={pagesConfig.contributions.description}
-            />
+        <PageContainer
+            title={pagesConfig.contributions.title}
+            description={pagesConfig.contributions.description}
+        >
             <ContributionCard
                 contributions={[
                     ...contributionsUnsorted,
                     ...contributionsUnsorted,
                 ]}
             />
-        </>
+        </PageContainer>
     );
 }

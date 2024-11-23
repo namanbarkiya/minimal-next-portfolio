@@ -4,6 +4,7 @@ import PageHeader from "@/components/common/page-header";
 import SkillsCard from "@/components/skills/skills-card";
 import { pagesConfig } from "@/config/pages";
 import { skills } from "@/config/skills";
+import PageContainer from "@/components/common/page-container";
 
 export const metadata: Metadata = {
     title: "Skills",
@@ -12,12 +13,11 @@ export const metadata: Metadata = {
 
 export default function SkillsPage() {
     return (
-        <>
-            <PageHeader
-                title={pagesConfig.skills.title}
-                description={pagesConfig.skills.description}
-            />
+        <PageContainer
+            title={pagesConfig.skills.title}
+            description={pagesConfig.skills.description}
+        >
             <SkillsCard skills={skills} />
-        </>
+        </PageContainer>
     );
 }
