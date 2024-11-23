@@ -4,8 +4,8 @@ This portfolio website is designed to showcase your professional and personal wo
 
 https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
 
-
 ## Features
+
 - **Next.js 14**: Utilizing the latest version of Next.js for enhanced performance and features.
 - **UI Library**: Leveraging the power of shadcn UI and Tailwind CSS for a visually appealing and responsive user interface.
 - **Google Form Integration**: Seamlessly integrated with Google Forms to store and manage form responses.
@@ -14,28 +14,30 @@ https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-
 - **Skills Highlights**: Highlight your key skills and expertise to impress visitors.
 
 ## Getting Started
+
 To get started with your own Next.js 14 Portfolio Website, follow these steps:
 
 1. Copy the contents of `.env.copy` to a new `.env` file and fill in the required information.
 2. Install the project dependencies using one of the following commands:
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 3. Start the development server by running:
-    ```bash
-    npm run dev
-    ```
+
+   ```bash
+   npm run dev
+   ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your web browser to see the website in action.
 
 Now, you're all set to customize and populate your portfolio website with your professional and personal content. Enjoy showcasing your work!
 
 ## Insights
+
 ![Screenshot 2024-02-02 at 3 45 16 AM](https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/3fb9c94d-9d99-4e98-92ea-14aadc91b568)
 ![Screenshot 2024-02-02 at 3 47 49 AM](https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/7cfe28cc-b619-4199-9dab-1cf16723b86d)
-
-
 
 ## Learn More
 

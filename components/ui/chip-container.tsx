@@ -1,16 +1,15 @@
-import React from "react";
 import Chip from "./chip";
 
 interface ChipContainerProps {
-    textArr: string[];
+  textArr: string[];
 }
 
 export default function ChipContainer({ textArr }: ChipContainerProps) {
-    return (
-        <div className="flex my-3 gap-2 flex-wrap">
-            {textArr.map((it, ind) => (
-                <Chip key={ind} content={it} />
-            ))}
-        </div>
-    );
+  return (
+    <div className="flex my-3 gap-2 flex-wrap">
+      {textArr.map((it, ind) => (
+        <Chip key={ind} content={it} />
+      ))}
+    </div>
+  );
 }

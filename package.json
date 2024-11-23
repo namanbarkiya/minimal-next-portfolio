@@ -48,6 +48,8 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.9"
+    "@types/nodemailer": "^6.4.9",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier": "^3.3.3"
   }
 }
