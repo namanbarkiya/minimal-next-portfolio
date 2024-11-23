@@ -1,11 +1,12 @@
+import React from "react";
+
+import { Icons } from "@/components/common/icons";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import React from "react";
-import { Icons } from "../common/icons";
 
 interface CustomTooltipProps {
   children: React.ReactNode;

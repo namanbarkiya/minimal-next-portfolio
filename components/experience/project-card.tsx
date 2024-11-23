@@ -3,8 +3,8 @@ import Link from "next/link";
 
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
+import ChipContainer from "@/components/ui/chip-container";
 import { ExperienceInterface } from "@/config/experience";
-import ChipContainer from "../ui/chip-container";
 
 interface ProjectCardProps {
   project: ExperienceInterface;
