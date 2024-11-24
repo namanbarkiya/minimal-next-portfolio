@@ -35,7 +35,7 @@ export function MainNav({ items, children }: MainNavProps) {
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <span className={cn(norican.className, "text-2xl")}>
-          {siteConfig.name}
+          {siteConfig.authorName}
         </span>
       </Link>
       {items?.length ? (
