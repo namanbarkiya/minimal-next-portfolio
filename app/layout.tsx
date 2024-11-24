@@ -32,20 +32,14 @@ export const metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
-  ],
+  keywords: siteConfig.keywords,
   authors: [
     {
-      name: "namanbarkiya",
-      url: "https://namanbarkiya.com",
+      name: siteConfig.authorName,
+      url: siteConfig.url,
     },
   ],
-  creator: "namanbarkiya",
+  creator: siteConfig.username,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
@@ -62,15 +56,13 @@ export const metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/og.jpg`],
-    creator: "@namanbarkiya",
+    images: [{ url: siteConfig.ogImage }],
+    creator: siteConfig.username,
   },
   icons: {
-    icon: "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
-    shortcut:
-      "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
-    apple:
-      "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
+    icon: siteConfig.iconIco,
+    shortcut: siteConfig.logoIcon,
+    apple: siteConfig.logoIcon,
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
 };

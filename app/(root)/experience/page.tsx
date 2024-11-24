@@ -7,8 +7,8 @@ import { Experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
-  title: "Experience",
-  description: "Examples of cards built using the components.",
+  title: pagesConfig.experience.metadata.title,
+  description: pagesConfig.experience.metadata.description,
 };
 
 const renderContent = (tabVal: string) => {

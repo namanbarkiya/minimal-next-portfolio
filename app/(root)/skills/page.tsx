@@ -6,8 +6,8 @@ import { pagesConfig } from "@/config/pages";
 import { skills } from "@/config/skills";
 
 export const metadata: Metadata = {
-  title: "Skills",
-  description: "Examples of cards built using the components.",
+  title: pagesConfig.skills.metadata.title,
+  description: pagesConfig.skills.metadata.description,
 };
 
 export default function SkillsPage() {

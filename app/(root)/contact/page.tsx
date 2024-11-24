@@ -6,8 +6,8 @@ import { ContactForm } from "@/components/forms/contact-form";
 import { pagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Examples of cards built using the components.",
+  title: pagesConfig.contact.metadata.title,
+  description: pagesConfig.contact.metadata.description,
 };
 
 export default function ContactPage() {

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,6 +25,11 @@ import namanImg from "@/public/naman-img.jpg";
 //     DropdownMenuLabel,
 //     DropdownMenuTrigger,
 // } from "@/components/ui/dropdown-menu";
+
+export const metadata: Metadata = {
+  title: pagesConfig.home.metadata.title,
+  description: pagesConfig.home.metadata.description,
+};
 
 export default async function IndexPage() {
   return (

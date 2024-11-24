@@ -6,8 +6,8 @@ import { contributionsUnsorted } from "@/config/contributions";
 import { pagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
-  title: "Contributions",
-  description: "Examples of cards built using the components.",
+  title: pagesConfig.contributions.metadata.title,
+  description: pagesConfig.contributions.metadata.description,
 };
 
 export default function ContributonsPage() {
