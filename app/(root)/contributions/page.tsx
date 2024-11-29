@@ -17,7 +17,7 @@ export default function ContributonsPage() {
       description={pagesConfig.contributions.description}
     >
       <ContributionCard
-        contributions={[...contributionsUnsorted, ...contributionsUnsorted]}
+        contributions={contributionsUnsorted}
       />
     </PageContainer>
   );
