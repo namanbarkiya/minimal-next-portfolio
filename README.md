@@ -1,6 +1,14 @@
 # Next.js 14 Portfolio Website
 
-This portfolio website is designed to showcase your professional and personal work while adhering to the latest coding patterns and featuring a stunning, minimalistic design.
+A modern and easy-to-use **Next.js 14 portfolio template** designed for developers and creatives. This open-source project is built with the latest coding standards, server-side components, and optimized routing for seamless performance. Customization is effortless—just update the provided objects to make it uniquely yours.
+
+## Key Features:
+- **100% Performance Score**: Fully optimized for Vercel deployment.  
+- **SEO-Friendly**: Crafted to boost visibility and search engine ranking.  
+- **Modern Patterns**: Implements the best practices in Next.js 14.  
+- **Easy Customization**: Simple, object-driven structure for quick updates.  
+
+Get started with this template and showcase your work effortlessly! 🚀
 
 https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
 
