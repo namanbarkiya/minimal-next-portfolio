@@ -1,32 +1,66 @@
 import { ValidPages } from "./constants";
 
 type PagesConfig = {
-    [key in ValidPages]: {
-        title: string;
-        description: string;
-        // featuredDescription: string;
+  [key in ValidPages]: {
+    title: string;
+    description: string;
+    metadata: {
+      title: string;
+      description: string;
     };
+    // featuredDescription: string;
+  };
 };
 
 export const pagesConfig: PagesConfig = {
-    skills: {
-        title: "Skills",
-        description: "Key skills that define my professional identity.",
-        // featuredDescription: "Skill Showcase",
+  home: {
+    title: "Home",
+    description: "Welcome to my portfolio website.",
+    metadata: {
+      title: "Home",
+      description: "Naman Barkiya's portfolio website.",
     },
-    experience: {
-        title: "Experience",
-        description: "Highlighting career journey and impactful projects.",
-        // featuredDescription: "Work Timeline",
+  },
+  skills: {
+    title: "Skills",
+    description: "Key skills that define my professional identity.",
+    metadata: {
+      title: "Skills",
+      description:
+        "Naman Barkiya's key skills that define his professional identity.",
     },
-    contact: {
-        title: "Contact",
-        description: "Let's connect and explore collaborations.",
-        // featuredDescription: "Get in Touch",
+  },
+  experience: {
+    title: "Experience",
+    description: "Highlighting career journey and impactful projects.",
+    metadata: {
+      title: "Experience",
+      description: "Naman Barkiya's experience in building web applications.",
     },
-    contributions: {
-        title: "Contributions",
-        description: "Open-source contributions and community involvement.",
-        // featuredDescription: "Contributions Showcase",
+  },
+  contact: {
+    title: "Contact",
+    description: "Let's connect and explore collaborations.",
+    metadata: {
+      title: "Contact",
+      description: "Contact Naman Barkiya.",
     },
+  },
+  contributions: {
+    title: "Contributions",
+    description: "Open-source contributions and community involvement.",
+    metadata: {
+      title: "Contributions",
+      description:
+        "Naman Barkiya's open-source contributions and community involvement.",
+    },
+  },
+  resume: {
+    title: "Resume",
+    description: "Naman Barkiya's resume.",
+    metadata: {
+      title: "Resume",
+      description: "Naman Barkiya's resume.",
+    },
+  },
 };

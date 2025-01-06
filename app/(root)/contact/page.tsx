@@ -1,27 +1,29 @@
-import React from "react";
 import { Metadata } from "next";
 
-import PageHeader from "@/components/page-header";
+import PageContainer from "@/components/common/page-container";
+import GithubRedirectCard from "@/components/contact/github-redirect-card";
 import { ContactForm } from "@/components/forms/contact-form";
 import { pagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
-    title: "Contact",
-    description: "Examples of cards built using the components.",
+  title: pagesConfig.contact.metadata.title,
+  description: pagesConfig.contact.metadata.description,
 };
 
 export default function ContactPage() {
-    return (
-        <>
-            <PageHeader
-                title={pagesConfig.contact.title}
-                description={pagesConfig.contact.description}
-            />
-            <div className="flex justify-center min-w-full">
-                <div className="flex w-[40rem]">
-                    <ContactForm />
-                </div>
-            </div>
-        </>
-    );
+  return (
+    <PageContainer
+      title={pagesConfig.contact.title}
+      description={pagesConfig.contact.description}
+    >
+      <div className="flex flex-col lg:flex-row">
+        <div className="flex-1">
+          <ContactForm />
+        </div>
+        <div className="flex-1 flex justify-center ">
+          <GithubRedirectCard />
+        </div>
+      </div>
+    </PageContainer>
+  );
 }
