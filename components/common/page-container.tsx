@@ -1,4 +1,5 @@
 import React from "react";
+import { ClientPageWrapper } from "./client-page-wrapper";
 import PageHeader from "./page-header";
 
 interface PageContainerProps {
@@ -13,9 +14,11 @@ export default function PageContainer({
   children,
 }: PageContainerProps) {
   return (
-    <div>
-      <PageHeader title={title} description={description} />
-      <div className="mx-6">{children}</div>
-    </div>
+    <ClientPageWrapper>
+      <div>
+        <PageHeader title={title} description={description} />
+        <div className="mx-6">{children}</div>
+      </div>
+    </ClientPageWrapper>
   );
 }
