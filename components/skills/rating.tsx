@@ -24,7 +24,7 @@ export default function Rating({ stars }: ratingProps) {
           </svg>
         ) : (
           <svg
-            className="w-4 h-4 text-gray-300 dark:text-gray-500"
+            className="w-4 h-4 text-muted"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

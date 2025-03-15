@@ -52,7 +52,7 @@ export default function IndexPage() {
             height={100}
             width={100}
             sizes="100vw"
-            className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary dark:border-white dark:bg-white"
+            className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
             alt="naman-barkiya-img"
           />
           {/* </div> */}
@@ -140,7 +140,7 @@ export default function IndexPage() {
         </div>
       </section>
       <AnimatedSection
-        className="container space-y-6 bg-slate-50 dark:bg-transparent py-10"
+        className="container space-y-6 bg-muted py-10"
         id="skills"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -174,7 +174,7 @@ export default function IndexPage() {
       </AnimatedSection>
       <AnimatedSection
         direction="right"
-        className="container space-y-6 dark:bg-transparent py-10 my-14"
+        className="container space-y-6 py-10 my-14"
         id="experience"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -218,7 +218,7 @@ export default function IndexPage() {
       </AnimatedSection>
       <AnimatedSection
         direction="left"
-        className="container space-y-6 bg-slate-50 dark:bg-transparent py-10 my-14"
+        className="container space-y-6 bg-muted py-10 my-14"
         id="contributions"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">

@@ -75,7 +75,7 @@ export default function Experience({ params }: ExperiencePageProps) {
               alt={"naman"}
               width={42}
               height={42}
-              className="rounded-full bg-white"
+              className="rounded-full bg-background"
             />
 
             <div className="flex-1 text-left leading-tight">
