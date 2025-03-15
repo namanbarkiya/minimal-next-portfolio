@@ -51,7 +51,8 @@ export const Experiences: ExperienceInterface[] = [
     pagesInfoArr: [
       {
         title: "Landing Page",
-        description: "test description",
+        description:
+          "Modern and responsive landing page showcasing company services and portfolio",
         imgArr: [
           "/experience/builtdesign/landing_1.webp",
           "/experience/builtdesign/landing_3.webp",
@@ -63,12 +64,14 @@ export const Experiences: ExperienceInterface[] = [
       },
       {
         title: "Custom PDF Reader and optimizer",
-        description: "test description",
+        description:
+          "Specialized PDF viewer with optimization features for improved performance and user experience",
         imgArr: ["/experience/builtdesign/pdf_opt.webp"],
       },
       {
         title: "Clients Dashboard",
-        description: "test description",
+        description:
+          "Comprehensive client portal with project tracking, document management, and communication tools",
         imgArr: [
           "/experience/builtdesign/cli_dashboard_1.webp",
           "/experience/builtdesign/cli_dashboard_2.webp",
@@ -77,7 +80,8 @@ export const Experiences: ExperienceInterface[] = [
       },
       {
         title: "Admin Dashboard",
-        description: "test description",
+        description:
+          "Powerful administrative interface for managing users, projects, and system settings",
         imgArr: ["/experience/builtdesign/logo.png"],
       },
     ],
@@ -112,12 +116,14 @@ export const Experiences: ExperienceInterface[] = [
     pagesInfoArr: [
       {
         title: "Quotes View Page",
-        description: "test description",
+        description:
+          "Elegantly designed quotes display with customizable themes and sharing options",
         imgArr: ["/experience/superquotes/app_2.webp"],
       },
       {
         title: "Quotes Download Component",
-        description: "test description",
+        description:
+          "Feature allowing users to download quotes as beautiful images for social media sharing",
         imgArr: [
           "/experience/superquotes/app_4.webp",
           "/experience/superquotes/app_7.webp",
@@ -125,12 +131,14 @@ export const Experiences: ExperienceInterface[] = [
       },
       {
         title: "Account Management",
-        description: "test description",
+        description:
+          "User profile management with favorites, history, and personalization settings",
         imgArr: ["/experience/superquotes/app_6.webp"],
       },
       {
         title: "Interest Selection and Update Page",
-        description: "test description",
+        description:
+          "Interactive interface for users to select and update their quote preferences and interests",
         imgArr: [
           "/experience/superquotes/app_1.webp",
           "/experience/superquotes/app_3.webp",
@@ -138,7 +146,8 @@ export const Experiences: ExperienceInterface[] = [
       },
       {
         title: "Responsiveness",
-        description: "test description",
+        description:
+          "Adaptive design ensuring optimal user experience across various device sizes and orientations",
         imgArr: ["/experience/superquotes/app_5.webp"],
       },
     ],
@@ -163,63 +172,61 @@ export const Experiences: ExperienceInterface[] = [
     type: "Personal Project",
     category: ["Mobile Dev", "Full Stack", "UI/UX"],
     shortDescription:
-      "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
+      "Developed a feature-rich mobile shopping application with admin panel, user authentication, and seamless product management using React Native and Firebase.",
     githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
-    techStack: [
-      "React Native",
-      "Node.js",
-      "express.js",
-      "MongoDB",
-      "Typescript",
-    ],
+    techStack: ["React Native", "Javascript", "Redux", "Node.js", "express.js"],
     startDate: new Date("2021-07-14"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/experience/apex/logo.png",
     pagesInfoArr: [
       {
         title: "Splash Screen",
-        description: "test description",
+        description: "Custom animated splash screen with app branding",
         imgArr: ["/experience/apex/app_7.webp"],
       },
       {
         title: "Login/Signup Authentication",
-        description: "test description",
+        description: "Secure user authentication system with Firebase",
         imgArr: ["/experience/apex/app_1.webp"],
       },
       {
         title: "All Products Explore Screen",
-        description: "test description",
+        description: "Interactive product browsing with categories and filters",
         imgArr: ["/experience/apex/app_3.webp"],
       },
       {
         title: "Admin Panel",
-        description: "test description",
+        description:
+          "Comprehensive admin dashboard for product and order management",
         imgArr: ["/experience/apex/app_4.webp", "/experience/apex/app_6.webp"],
       },
       {
         title: "Sidenav Navigation",
-        description: "test description",
+        description: "Intuitive side navigation for easy app navigation",
         imgArr: ["/experience/apex/app_5.webp"],
       },
       {
         title: "Firebase Database",
-        description: "test description",
+        description:
+          "Real-time database structure for efficient data management",
         imgArr: ["/experience/apex/db.webp"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        `As an integral part of the Builtdesign project, I embarked on the creation of an engaging blogs website, seamlessly intertwining the power of Netlify CMS and React.`,
-        `My role was to weave together the threads of technology and creativity, crafting a platform that echoed the essence of Builtdesign's vision.`,
-        `The symphony of React components danced in harmony, orchestrating an interface that seamlessly materialized the blogosphere.`,
-        `The crowning jewel was the integration of Netlify CMS, an elegant solution that granted content creators a canvas to paint their narratives.`,
-        `This venture left an indelible mark on my skill set, sharpening my proficiency in both front-end and content management technologies.`,
+        "The Apex Shopping App represents a comprehensive mobile e-commerce solution that I developed from the ground up using React Native and Firebase. This project showcases my ability to create a full-featured shopping application with both user and admin functionalities.",
+        "The application features a robust authentication system, allowing users to securely sign up and log in. The product exploration interface is designed with user experience in mind, incorporating smooth navigation and intuitive filtering options.",
+        "One of the key highlights is the admin panel, which provides complete control over product management, order processing, and inventory tracking. The integration with Firebase ensures real-time data synchronization and reliable data persistence.",
+        "The app's architecture emphasizes scalability and performance, utilizing Redux for state management and following best practices for mobile app development. The UI/UX design focuses on providing a seamless shopping experience across different device sizes.",
       ],
       bullets: [
-        "Designed and developed the Builtdesign Blogs Website as an integral part of the larger project.",
-        "Harmonized the power of React to create a captivating and intuitive user interface.",
-        "Integrated Netlify CMS, providing them with a user-friendly platform.",
-        "Enhanced my skill set in front-end development and content management technologies.",
+        "Implemented secure user authentication and authorization using Firebase",
+        "Designed and developed an intuitive product browsing and shopping cart system",
+        "Created a comprehensive admin panel for product and order management",
+        "Integrated real-time data synchronization using Firebase Database",
+        "Implemented state management using Redux for optimal performance",
+        "Designed responsive UI components following mobile-first principles",
+        "Incorporated smooth animations and transitions for enhanced user experience",
       ],
     },
   },
@@ -231,37 +238,32 @@ export const Experiences: ExperienceInterface[] = [
     shortDescription:
       "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
     websiteLink: "https://blog.builtdesign.in",
-    techStack: [
-      "React Native",
-      "Next.js",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Nest.js",
-      "Typescript",
-    ],
+    techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/experience/builtdesign-blogs/logo.png",
     pagesInfoArr: [
       {
-        title: "Blogs Landing Page",
-        description: "test description",
+        title: "Blog Landing Page",
+        description:
+          "Modern and responsive landing page showcasing featured articles",
         imgArr: ["/experience/builtdesign-blogs/blog_2.webp"],
       },
       {
-        title: "All Blogs",
-        description: "test description",
+        title: "Blog Listing",
+        description:
+          "Organized display of all blog posts with search and filtering",
         imgArr: ["/experience/builtdesign-blogs/blog_3.webp"],
       },
       {
-        title: "Category Filter in Blogs",
-        description: "test description",
+        title: "Category Navigation",
+        description: "Intuitive category-based navigation system",
         imgArr: ["/experience/builtdesign-blogs/blog_1.webp"],
       },
       {
-        title: "Blog",
-        description: "test description",
+        title: "Article View",
+        description:
+          "Clean and readable article layout with rich media support",
         imgArr: [
           "/experience/builtdesign-blogs/blog_4.webp",
           "/experience/builtdesign-blogs/blog_5.webp",
@@ -270,17 +272,19 @@ export const Experiences: ExperienceInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        `As an integral part of the Builtdesign project, I embarked on the creation of an engaging blogs website, seamlessly intertwining the power of Netlify CMS and React.`,
-        `My role was to weave together the threads of technology and creativity, crafting a platform that echoed the essence of Builtdesign's vision.`,
-        `The symphony of React components danced in harmony, orchestrating an interface that seamlessly materialized the blogosphere.`,
-        `The crowning jewel was the integration of Netlify CMS, an elegant solution that granted content creators a canvas to paint their narratives.`,
-        `This venture left an indelible mark on my skill set, sharpening my proficiency in both front-end and content management technologies.`,
+        "As part of the Builtdesign platform, I developed a sophisticated blog website that serves as a content hub for the company's thought leadership and industry insights. The project leveraged Next.js and React to create a fast, SEO-friendly platform.",
+        "The blog platform features a modern, responsive design that prioritizes readability and user engagement. I implemented a robust content management system using Netlify CMS, enabling the content team to easily publish and manage blog posts.",
+        "The architecture includes server-side rendering for optimal performance and SEO, while MongoDB provides flexible content storage. TypeScript ensures code reliability and maintainability throughout the application.",
+        "Key features include category-based navigation, search functionality, and a rich text editor for content creation. The platform supports various content types including images, code snippets, and embedded media.",
       ],
       bullets: [
-        "Designed and developed the Builtdesign Blogs Website as an integral part of the larger project.",
-        "Harmonized the power of React to create a captivating and intuitive user interface.",
-        "Integrated Netlify CMS, providing them with a user-friendly platform.",
-        "Enhanced my skill set in front-end development and content management technologies.",
+        "Developed a modern blog platform using Next.js and React with TypeScript",
+        "Implemented Netlify CMS for efficient content management",
+        "Created a responsive design that prioritizes readability and user engagement",
+        "Built server-side rendering for optimal performance and SEO",
+        "Integrated MongoDB for flexible content storage and management",
+        "Developed category-based navigation and search functionality",
+        "Implemented rich text editing capabilities for content creation",
       ],
     },
   },
@@ -293,35 +297,28 @@ export const Experiences: ExperienceInterface[] = [
       "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
     websiteLink: "https://card.namanbarkiya.xyz/",
     githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
-    techStack: [
-      "React Native",
-      "Next.js",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Nest.js",
-      "Typescript",
-    ],
+    techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/experience/card/logo.png",
     pagesInfoArr: [
       {
-        title: "Blogs Landing Page",
-        description: "Front and Back view of the card",
+        title: "Card Views",
+        description: "Front and back views of the interactive 3D card",
         imgArr: [
           "/experience/card/card_2.webp",
           "/experience/card/card_3.webp",
         ],
       },
       {
-        title: "Links embedding on the model",
-        description: "test description",
+        title: "Interactive Elements",
+        description:
+          "Custom links embedded in the 3D model with interactive animations",
         imgArr: ["/experience/card/card_1.webp"],
       },
       {
-        title: "Blender project",
-        description: "test description",
+        title: "3D Model Development",
+        description: "Blender project showcasing the model creation process",
         imgArr: ["/experience/card/card_4.webp"],
       },
     ],
@@ -355,17 +352,19 @@ export const Experiences: ExperienceInterface[] = [
     websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
     techStack: ["React", "Tailwind CSS", "Google Auth"],
     startDate: new Date("2023-01-01"),
-    endDate: new Date("2023-01-01"), // You can fill this in later
+    endDate: new Date("2023-02-15"),
     companyLogoImg: "/experience/cirql/logo.png",
     pagesInfoArr: [
       {
         title: "Dashboard Home",
-        description: "Main dashboard view",
+        description:
+          "Main dashboard view with analytics widgets and data visualization",
         imgArr: ["/experience/cirql/web_1.png", "/experience/cirql/web_2.png"],
       },
       {
         title: "Profile Page",
-        description: "User profile page",
+        description:
+          "User profile management interface with customization options",
         imgArr: ["/experience/cirql/web_3.png", "/experience/cirql/web_4.png"],
       },
     ],
@@ -393,11 +392,11 @@ export const Experiences: ExperienceInterface[] = [
     category: ["Web Dev", "UI/UX"],
     shortDescription:
       "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz", // You can fill this in later
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard", // You can fill this in later
+    websiteLink: "https://hindityping.namanbarkiya.xyz",
+    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["HTML 5", "CSS 3", "Javascript"],
     startDate: new Date("2022-05-01"),
-    endDate: new Date("2022-05-01"), // You can fill this in later
+    endDate: new Date("2022-06-15"),
     companyLogoImg: "/experience/hindi-keyboard/logo.png",
     pagesInfoArr: [
       {
@@ -407,7 +406,8 @@ export const Experiences: ExperienceInterface[] = [
       },
       {
         title: "Copy and Download the file",
-        description: "Minimal and user-friendly Inscript Hindi typing area",
+        description:
+          "Export functionality allowing users to copy text or download as a document file",
         imgArr: [
           "/experience/hindi-keyboard/web_2.png",
           "/experience/hindi-keyboard/web_3.png",
