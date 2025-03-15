@@ -80,7 +80,20 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontHeading.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          themes={[
+            "light",
+            "dark",
+            "retro",
+            "cyberpunk",
+            "paper",
+            "aurora",
+            "synthwave",
+          ]}
+        >
           {children}
           <Analytics />
           <Toaster />

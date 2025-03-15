@@ -73,6 +73,181 @@
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
   }
+  
+  .retro {
+    --background: 39 70% 90%;
+    --foreground: 20 80% 20%;
+    
+    --muted: 30 40% 85%;
+    --muted-foreground: 20 40% 30%;
+    
+    --popover: 39 70% 90%;
+    --popover-foreground: 20 80% 20%;
+    
+    --border: 20 40% 70%;
+    --input: 20 40% 70%;
+    
+    --card: 39 60% 85%;
+    --card-foreground: 20 80% 20%;
+    
+    --primary: 20 80% 50%;
+    --primary-foreground: 39 100% 97%;
+    
+    --secondary: 30 60% 80%;
+    --secondary-foreground: 20 80% 20%;
+    
+    --accent: 20 80% 50%;
+    --accent-foreground: 39 100% 97%;
+    
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 39 100% 97%;
+    
+    --ring: 20 40% 70%;
+    
+    --radius: 0.125rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .cyberpunk {
+    --background: 235 85% 8%;
+    --foreground: 180 100% 75%;
+    
+    --muted: 235 70% 15%;
+    --muted-foreground: 180 70% 55%;
+    
+    --popover: 235 85% 8%;
+    --popover-foreground: 180 100% 75%;
+    
+    --border: 326 100% 60%;
+    --input: 326 100% 60%;
+    
+    --card: 235 80% 12%;
+    --card-foreground: 180 100% 75%;
+    
+    --primary: 326 100% 60%;
+    --primary-foreground: 235 100% 98%;
+    
+    --secondary: 196 100% 60%;
+    --secondary-foreground: 235 85% 8%;
+    
+    --accent: 58 100% 60%;
+    --accent-foreground: 235 85% 8%;
+    
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 235 100% 98%;
+    
+    --ring: 326 100% 60%;
+    
+    --radius: 0.125rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .aurora {
+    --background: 220 40% 10%;
+    --foreground: 160 100% 90%;
+    
+    --muted: 220 30% 20%;
+    --muted-foreground: 160 70% 70%;
+    
+    --popover: 220 40% 10%;
+    --popover-foreground: 160 100% 90%;
+    
+    --border: 280 80% 60%;
+    --input: 280 80% 60%;
+    
+    --card: 220 35% 15%;
+    --card-foreground: 160 100% 90%;
+    
+    --primary: 160 100% 50%;
+    --primary-foreground: 220 40% 10%;
+    
+    --secondary: 280 80% 60%;
+    --secondary-foreground: 220 40% 10%;
+    
+    --accent: 320 80% 60%;
+    --accent-foreground: 220 40% 10%;
+    
+    --destructive: 0 90% 60%;
+    --destructive-foreground: 220 40% 10%;
+    
+    --ring: 280 80% 60%;
+    
+    --radius: 1rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .synthwave {
+    --background: 260 15% 10%;
+    --foreground: 330 100% 90%;
+    
+    --muted: 260 20% 20%;
+    --muted-foreground: 330 70% 70%;
+    
+    --popover: 260 15% 10%;
+    --popover-foreground: 330 100% 90%;
+    
+    --border: 300 100% 60%;
+    --input: 300 100% 60%;
+    
+    --card: 260 15% 15%;
+    --card-foreground: 330 100% 90%;
+    
+    --primary: 300 100% 60%;
+    --primary-foreground: 260 15% 10%;
+    
+    --secondary: 190 100% 60%;
+    --secondary-foreground: 260 15% 10%;
+    
+    --accent: 60 100% 60%;
+    --accent-foreground: 260 15% 10%;
+    
+    --destructive: 350 100% 60%;
+    --destructive-foreground: 260 15% 10%;
+    
+    --ring: 300 100% 60%;
+    
+    --radius: 0.5rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .paper {
+    --background: 40 30% 95%;
+    --foreground: 25 50% 20%;
+    
+    --muted: 30 20% 90%;
+    --muted-foreground: 25 30% 40%;
+    
+    --popover: 40 30% 95%;
+    --popover-foreground: 25 50% 20%;
+    
+    --border: 25 30% 80%;
+    --input: 25 30% 80%;
+    
+    --card: 35 25% 92%;
+    --card-foreground: 25 50% 20%;
+    
+    --primary: 25 95% 40%;
+    --primary-foreground: 40 30% 98%;
+    
+    --secondary: 15 60% 85%;
+    --secondary-foreground: 25 50% 20%;
+    
+    --accent: 15 60% 85%;
+    --accent-foreground: 25 50% 20%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 30% 98%;
+    
+    --ring: 25 30% 80%;
+    
+    --radius: 0.25rem;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+  }
 }
 
 @layer base {
@@ -97,8 +272,8 @@
   width: 100%;
   min-height: 200px;
   text-align: center;
-  color: whitesmoke;
-  background-color: whitesmoke;
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
   box-shadow:
     0 1px 1px rgba(0, 0, 0, 0.1),
     0 2px 2px rgba(0, 0, 0, 0.1),
@@ -194,13 +369,13 @@
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: hsl(var(--primary-foreground));
+  background-color: hsl(var(--primary));
   border: none;
 }
 
 .btn:hover {
-  background-color: #0d0d0d;
+  background-color: hsl(var(--primary) / 0.9);
 }
 
 .btn:focus {
@@ -271,7 +446,7 @@
 
   .circle {
     fill-opacity: 0;
-    stroke: #16a349;
+    stroke: hsl(var(--primary));
     stroke-width: 16px;
     transform-origin: center;
     transform: scale(0);
@@ -290,7 +465,7 @@
     transform: scale(0.9);
     stroke-width: 8px;
     fill-opacity: 1;
-    fill: #16a349;
+    fill: hsl(var(--primary));
   }
 }
 

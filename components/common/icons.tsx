@@ -18,14 +18,19 @@ import {
   Menu,
   Moon,
   MoreVertical,
+  Music,
+  Palette,
   Phone,
   Pizza,
   Plus,
+  Scroll,
   Settings,
+  Sparkles,
   SunMedium,
   Trash,
   User,
   X,
+  Zap,
 } from "lucide-react";
 import { AiFillStar } from "react-icons/ai";
 import { BiLaugh, BiSolidUser } from "react-icons/bi";
@@ -149,11 +154,11 @@ export const Icons = {
         aria-hidden="true"
         {...props}
       >
-        <circle className="circle" fill="#5bb543" cx="24" cy="24" r="22" />
+        <circle className="circle" cx="24" cy="24" r="22" />
         <path
           className="tick"
           fill="none"
-          stroke="#FFF"
+          stroke="currentColor"
           stroke-width="4"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -163,4 +168,9 @@ export const Icons = {
       </svg>
     </div>
   ),
+  retro: Palette,
+  cyberpunk: Zap,
+  paper: Scroll,
+  aurora: Sparkles,
+  synthwave: Music,
 };
