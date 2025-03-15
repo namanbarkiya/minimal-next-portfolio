@@ -60,7 +60,7 @@ export function MainNav({ items, children }: MainNavProps) {
         </Link>
       </motion.div>
       {items?.length ? (
-        <nav className="hidden gap-6 md:flex">
+        <nav className="hidden gap-6 md:flex items-center">
           {items?.map((item, index) => (
             <motion.div
               key={index}
