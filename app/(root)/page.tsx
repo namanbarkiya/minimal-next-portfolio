@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
@@ -13,49 +14,74 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredContributions } from "@/config/contributions";
 import { featuredExperiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
+import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
 import namanImg from "@/public/naman-img.jpg";
-// import {
-//     Accordion,
-//     AccordionContent,
-//     AccordionItem,
-//     AccordionTrigger,
-// } from "@/components/ui/accordion";
-// import {
-//     DropdownMenu,
-//     DropdownMenuContent,
-//     DropdownMenuLabel,
-//     DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu";
 
 export const metadata: Metadata = {
-  title: pagesConfig.home.metadata.title,
-  description: pagesConfig.home.metadata.description,
+  title: `${pagesConfig.home.metadata.title} | Modern Next.js Developer Portfolio Template`,
+  description: `${pagesConfig.home.metadata.description} This open-source Next.js portfolio template is customizable to showcase your skills and projects.`,
+  alternates: {
+    canonical: siteConfig.url,
+  },
 };
 
 export default function IndexPage() {
+  // Structured data for personal portfolio
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: siteConfig.authorName,
+    url: siteConfig.url,
+    image: siteConfig.ogImage,
+    jobTitle: "Full Stack Developer",
+    sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+  };
+
+  // Structured data for website as a software application (template)
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Next.js Portfolio Template",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    author: {
+      "@type": "Person",
+      name: siteConfig.authorName,
+      url: siteConfig.url,
+    },
+  };
+
   return (
     <ClientPageWrapper>
+      <Script
+        id="schema-person"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <Script
+        id="schema-software"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+
       <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
-          {/* <Link
-                        href={"siteConfig.links.twitter"}
-                        className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
-                        target="_blank"
-                    >
-                        Follow along on Twitter
-                    </Link> */}
-          {/* <div className="max-w-[16rem]"> */}
           <Image
             src={namanImg}
             height={100}
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="naman-barkiya-img"
+            alt="Naman Barkiya - Full Stack Developer Portfolio"
+            priority
           />
-          {/* </div> */}
           <AnimatedText
             as="h1"
             delay={0.2}
@@ -70,51 +96,20 @@ export default function IndexPage() {
           >
             Full Stack Developer
           </AnimatedText>
-          {/* <Accordion
-                        type="single"
-                        collapsible
-                        className="flex items-center w-full max-w-[35rem]"
-                    >
-                        <AccordionItem value="main-ques" className="flex-1">
-                            <AccordionTrigger>
-                                <p className="flex items-center">
-                                    Can you guess my favorite coding problem?
-                                </p>
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                &ldquo;Check if a given string is palindrome or
-                                not&rdquo;
-                                <Icons.laughEmoji className="w-4 h-5 md:w-5 ml-2" />
-                            </AccordionContent>
-                        </AccordionItem>
-                        <DropdownMenu>
-                            <DropdownMenuTrigger
-                                asChild
-                                className="cursor-pointer"
-                            >
-                                <Icons.questionMark className="w-5 h-5 ml-3 text-muted-foreground " />
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent className="w-56">
-                                <DropdownMenuLabel className="flex items-center text-muted-foreground">
-                                    <Icons.infoMark className="w-4 h-4 mr-2" />
-                                    Hint: Naman
-                                </DropdownMenuLabel>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
-                    </Accordion> */}
+          <div className="mt-4 max-w-[42rem] text-center">
+            <p className="leading-normal text-muted-foreground text-sm sm:text-base">
+              Open-source Next.js portfolio template. Fork this on GitHub to
+              create your own developer portfolio.
+            </p>
+          </div>
 
-          {/* <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-                        Full-stack web developer with two years&apos; experience
-                        who is innovative and ambitious. Excellent analytical
-                        and creative abilities, with a heavy emphasis on writing
-                        well-documented code.
-                    </p> */}
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
                 href={"https://github.com/namanbarkiya"}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
+                aria-label="View Naman Barkiya's GitHub profile"
               >
                 <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
               </Link>
@@ -129,6 +124,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
+                aria-label="Contact Naman Barkiya"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
@@ -166,11 +162,6 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-        {/* <div className="mx-auto text-center md:max-w-[58rem]">
-                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant skills.
-                    </p>
-                </div> */}
       </AnimatedSection>
       <AnimatedSection
         direction="right"
@@ -246,11 +237,6 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-        {/* <div className="mx-auto text-center md:max-w-[58rem]">
-                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant skills.
-                    </p>
-                </div> */}
       </AnimatedSection>
     </ClientPageWrapper>
   );
