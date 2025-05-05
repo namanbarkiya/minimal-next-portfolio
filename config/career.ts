@@ -36,7 +36,7 @@ export const careerExperiences: CareerExperienceInterface[] = [
     ],
     skills: ["Javascript", "Typescript", "React", "Node.js", "MongoDB"],
     companyUrl: "https://www.ubs.com",
-    logo: "/career/ubs-logo.png",
+    logo: "/logo.png",
   },
   {
     id: "agentprod",
