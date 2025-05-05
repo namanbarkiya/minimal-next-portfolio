@@ -16,11 +16,10 @@ A modern, responsive, and SEO-optimized **Next.js 14 portfolio template** design
 - **Contact Form**: Functional contact form with validation
 - **Open Source**: Free to use and modify for your personal portfolio
 
-https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
-
 ## 🚀 Demo
 
-View the live demo at [https://nbarkiya.xyz/](https://nbarkiya.xyz/)
+View the live demo at [nbarkiya.xyz](https://nbarkiya.xyz/)
+https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
 
 ## 🛠️ Tech Stack
 
