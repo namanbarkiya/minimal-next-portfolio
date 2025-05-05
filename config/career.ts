@@ -34,7 +34,7 @@ export const careerExperiences: CareerExperienceInterface[] = [
       "Won UBS's internal AI Venture Challenge by developing data transformation pipelines and anomaly detection models on trading datasets.",
       "Collaborated closely with product owners and designers for user-centric features, improving usability and trader workflows.",
     ],
-    skills: ["Javascript", "Typescript", "React", "Node.js", "MongoDB"],
+    skills: ["Typescript", "React", "Databricks", "Java", "Python"],
     companyUrl: "https://www.ubs.com",
     logo: "/logo.png",
   },
