@@ -63,4 +63,12 @@ export const pagesConfig: PagesConfig = {
       description: "Naman Barkiya's resume.",
     },
   },
+  career: {
+    title: "Career Timeline",
+    description: "Professional journey and experience timeline.",
+    metadata: {
+      title: "Career Timeline",
+      description: "Naman Barkiya's professional journey and career timeline.",
+    },
+  },
 };
