@@ -30,7 +30,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
         <Link href="/" className="flex items-center space-x-2">
           <span className={cn(norican.className, "text-2xl")}>
-            {siteConfig.name}
+            {siteConfig.authorName}
           </span>
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">

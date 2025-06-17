@@ -208,7 +208,7 @@ export default function IndexPage() {
                 </div> */}
       </AnimatedSection>
       <AnimatedSection
-        direction="left"
+        direction="down"
         className="container space-y-6 bg-muted py-10 my-14"
         id="contributions"
       >
