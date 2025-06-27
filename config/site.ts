@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Naman Barkiya | Developer Portfolio Template",
+  name: "Naman Barkiya | Developer Portfolio",
   authorName: "Naman Barkiya",
   username: "namanbarkiya",
   description:
