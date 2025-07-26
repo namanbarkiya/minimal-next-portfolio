@@ -127,3 +127,11 @@ This project is open source and available under the [MIT License](LICENSE).
 The easiest way to deploy your portfolio is using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), the platform from the creators of Next.js.
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=namanbarkiya/minimal-next-portfolio&type=Date)](https://star-history.com/#namanbarkiya/minimal-next-portfolio&Date)
+
+---
+
+**Built with ❤️ by [Naman Barkiya](https://github.com/namanbarkiya)**
