@@ -9,7 +9,7 @@ export const siteConfig = {
     twitter: "https://x.com/namanbarkiya",
     github: "https://github.com/namanbarkiya",
   },
-  ogImage: "https://nbarkiya.xyz/naman-img.jpg",
+  ogImage: "https://nbarkiya.xyz/profile-img.jpg",
   iconIco:
     "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
   logoIcon:
