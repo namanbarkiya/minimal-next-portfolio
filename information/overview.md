@@ -10,9 +10,10 @@ The website's main navigation menu is accessible from all pages and includes the
 
 1. **Home**: [https://nbarkiya.xyz/](https://nbarkiya.xyz/)
 2. **Skills**: [https://nbarkiya.xyz/skills](https://nbarkiya.xyz/skills)
-3. **Experience**: [https://nbarkiya.xyz/experience](https://nbarkiya.xyz/experience)
-4. **Contributions**: [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
-5. **Contact**: [https://nbarkiya.xyz/contact](https://nbarkiya.xyz/contact)
+3. **Projects**: [https://nbarkiya.xyz/projects](https://nbarkiya.xyz/projects)
+4. **Experience**: [https://nbarkiya.xyz/experience](https://nbarkiya.xyz/experience)
+5. **Contributions**: [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
+6. **Contact**: [https://nbarkiya.xyz/contact](https://nbarkiya.xyz/contact)
 
 ---
 
@@ -26,7 +27,8 @@ The website's main navigation menu is accessible from all pages and includes the
 
 - **Introduction**: Presents the individual's name and role (e.g., "Full Stack Developer").
 - **Skills Overview**: Highlights key skills with a prompt to view all skills.
-- **Experience Highlights**: Summarizes notable projects with links to detailed descriptions.
+- **Projects Highlights**: Summarizes notable technical projects with links to detailed descriptions.
+- **Experience Highlights**: Summarizes professional work experience with links to detailed descriptions.
 - **Contributions Summary**: Lists recent open-source contributions with links for more information.
 
 ### 2. Skills
@@ -37,15 +39,23 @@ The website's main navigation menu is accessible from all pages and includes the
 
 - **Technical Skills**: Enumerates various technologies and tools, each accompanied by a brief description.
 
-### 3. Experience
+### 3. Projects
+
+**URL:** [https://nbarkiya.xyz/projects](https://nbarkiya.xyz/projects)
+
+**Sections:**
+
+- **Technical Projects**: Details technical projects with descriptions, technologies used, and links to read more.
+
+### 4. Experience
 
 **URL:** [https://nbarkiya.xyz/experience](https://nbarkiya.xyz/experience)
 
 **Sections:**
 
-- **Professional Projects**: Details projects with descriptions, roles, and links to read more.
+- **Professional Experience**: Details work experience with company information, roles, and achievements.
 
-### 4. Contributions
+### 5. Contributions
 
 **URL:** [https://nbarkiya.xyz/contributions](https://nbarkiya.xyz/contributions)
 
@@ -53,7 +63,7 @@ The website's main navigation menu is accessible from all pages and includes the
 
 - **Open-Source Contributions**: Lists contributions with descriptions and links to the respective repositories.
 
-### 5. Contact
+### 6. Contact
 
 **URL:** [https://nbarkiya.xyz/contact](https://nbarkiya.xyz/contact)
 

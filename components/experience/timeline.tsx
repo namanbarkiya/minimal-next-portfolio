@@ -7,7 +7,7 @@ import React from "react";
 import { AnimatedSection } from "@/components/common/animated-section";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
-import { CareerExperienceInterface } from "@/config/career";
+import { ExperienceInterface } from "@/config/experience";
 
 // Helper function to extract year from date
 const getYearFromDate = (date: Date): string => {
@@ -26,7 +26,7 @@ const getDurationText = (
 };
 
 interface TimelineProps {
-  experiences: CareerExperienceInterface[];
+  experiences: ExperienceInterface[];
 }
 
 const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
@@ -60,7 +60,7 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                   </div>
                 )}
                 <div className="flex-1 min-w-0">
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-2">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                     <h3 className="text-lg sm:text-xl font-bold text-foreground">
                       {experience.position}
                     </h3>
@@ -100,7 +100,7 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                 className="rounded-lg w-full sm:w-auto"
                 asChild
               >
-                <Link href={`/career/${experience.id}`}>
+                <Link href={`/experience/${experience.id}`}>
                   View Details
                   <Icons.chevronRight className="ml-2 h-4 w-4" />
                 </Link>

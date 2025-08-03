@@ -30,12 +30,12 @@ export const pagesConfig: PagesConfig = {
         "Naman Barkiya's key skills that define his professional identity.",
     },
   },
-  experience: {
-    title: "Experience",
-    description: "Highlighting career journey and impactful projects.",
+  projects: {
+    title: "Projects",
+    description: "Showcasing impactful projects and technical achievements.",
     metadata: {
-      title: "Experience",
-      description: "Naman Barkiya's experience in building web applications.",
+      title: "Projects",
+      description: "Naman Barkiya's projects in building web applications.",
     },
   },
   contact: {
@@ -63,12 +63,13 @@ export const pagesConfig: PagesConfig = {
       description: "Naman Barkiya's resume.",
     },
   },
-  career: {
-    title: "Career Timeline",
-    description: "Professional journey and experience timeline.",
+  experience: {
+    title: "Experience",
+    description: "Professional journey and career timeline.",
     metadata: {
-      title: "Career Timeline",
-      description: "Naman Barkiya's professional journey and career timeline.",
+      title: "Experience",
+      description:
+        "Naman Barkiya's professional journey and experience timeline.",
     },
   },
 };

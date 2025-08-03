@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExperienceDescription: React.FC<{
+const ProjectDescription: React.FC<{
   paragraphs: string[];
   bullets: string[];
 }> = ({ paragraphs, bullets }) => {
@@ -20,4 +20,4 @@ const ExperienceDescription: React.FC<{
   );
 };
 
-export default ExperienceDescription;
+export default ProjectDescription;
