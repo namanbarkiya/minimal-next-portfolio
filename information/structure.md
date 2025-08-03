@@ -14,6 +14,10 @@ This is the folder structure of the whole application
 │ │ │ └── page.tsx
 │ │ ├── layout.tsx
 │ │ ├── page.tsx
+│ │ ├── projects
+│ │ │ ├── [projectId]
+│ │ │ │ └── page.tsx
+│ │ │ └── page.tsx
 │ │ ├── resume
 │ │ │ └── page.tsx
 │ │ └── skills
@@ -49,6 +53,9 @@ This is the folder structure of the whole application
 │ ├── contributions
 │ │ └── contribution-card.tsx
 │ ├── experience
+│ │ ├── experience-card.tsx
+│ │ └── timeline.tsx
+│ ├── projects
 │ │ ├── exp-description.tsx
 │ │ └── project-card.tsx
 │ ├── forms
@@ -83,6 +90,7 @@ This is the folder structure of the whole application
 │ ├── contributions.ts
 │ ├── experience.ts
 │ ├── pages.ts
+│ ├── projects.ts
 │ ├── routes.ts
 │ ├── site.ts
 │ ├── skills.ts

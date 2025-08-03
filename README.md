@@ -4,7 +4,8 @@ A modern, responsive, and SEO-optimized **Next.js 14 portfolio template** design
 
 ## ✨ Key Features
 
-- **Interactive Career Timeline**: Showcase your professional journey with a visually appealing timeline
+- **Professional Experience Timeline**: Showcase your career journey with a visually appealing timeline
+- **Project Showcase**: Display your technical projects with detailed information and live demos
 - **Dark/Light Mode**: Professional appearance with theme support
 - **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
 - **100% Performance Score**: Fully optimized for speed and Core Web Vitals
@@ -73,24 +74,24 @@ The portfolio is designed to be easily customizable:
 
 1. **Personal Information**: Update your personal info in `config/site.ts`
 2. **Skills**: Add your skills in `config/skills.ts`
-3. **Experiences**: Add your work experiences in `config/experience.ts`
-4. **Career Timeline**: Customize your career journey in `config/career.ts`
+3. **Projects**: Add your technical projects in `config/projects.ts`
+4. **Experience**: Customize your professional experience in `config/experience.ts`
 5. **Contributions**: Showcase your contributions in `config/contributions.ts`
 6. **Colors & Theme**: Modify the theme in `tailwind.config.js`
 
 ## 🌟 Features In Detail
 
-### Career Timeline
+### Professional Experience Timeline
 
-An interactive, animated timeline that showcases your professional journey with expandable sections for details about each position.
+An interactive, animated timeline that showcases your career journey with expandable sections for details about each position and company.
+
+### Project Showcase
+
+Display your technical projects with detailed information, technologies used, live demo links, and comprehensive project descriptions.
 
 ### Skills Showcase
 
 Visually represent your technical and soft skills with customizable ratings and categories.
-
-### Project Gallery
-
-Display your projects with detailed information, technologies used, and live demo links.
 
 ### Contact Form Integration
 

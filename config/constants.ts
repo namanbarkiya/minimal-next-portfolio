@@ -52,7 +52,15 @@ export type ValidSkills =
   | "PyTorch"
   | "Spring Boot"
   | "Laravel"
-  | "PHP";
+  | "PHP"
+  | "Flutter"
+  | "Dart"
+  | "Flask"
+  | "Django"
+  | "FastAPI"
+  | "SQL"
+  | "NoSQL"
+  | "Framer Motion";
 
 export type ValidCategory =
   | "Full Stack"
@@ -63,13 +71,13 @@ export type ValidCategory =
   | "Mobile Dev"
   | "3D Modeling";
 
-export type ValidExpType = "Personal Project" | "Professional";
+export type ValidExpType = "Personal" | "Professional";
 
 export type ValidPages =
   | "home"
   | "skills"
+  | "projects"
   | "experience"
-  | "career"
   | "contact"
   | "contributions"
   | "resume";
