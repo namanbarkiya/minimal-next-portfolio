@@ -13,15 +13,16 @@ import { cn, formatDateFromObj } from "@/lib/utils";
 import profileImg from "@/public/profile-img.jpg";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     projectId: string;
-  };
+  }>;
 }
 
 const githubUsername = "namanbarkiya";
 
-export default function Project({ params }: ProjectPageProps) {
-  let project = Projects.find((val) => val.id === params.projectId);
+export default async function Project({ params }: ProjectPageProps) {
+  const { projectId } = await params;
+  let project = Projects.find((val) => val.id === projectId);
   if (!project) {
     redirect("/projects");
   }

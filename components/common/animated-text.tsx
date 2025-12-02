@@ -21,7 +21,7 @@ const textVariants = {
     transition: {
       delay,
       duration: 0.6,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   }),
 };

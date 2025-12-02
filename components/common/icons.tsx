@@ -42,7 +42,7 @@ import {
 } from "react-icons/hi";
 import { IoIosGitBranch } from "react-icons/io";
 import {
-  SiAmazonaws,
+  SiAmazonwebservices,
   SiAngular,
   SiBootstrap,
   SiCss3,
@@ -63,8 +63,8 @@ import {
   SiRedux,
   SiSocketdotio,
   SiTailwindcss,
-  SiTwitter,
   SiTypescript,
+  SiX,
 } from "react-icons/si";
 
 export const Icons = {
@@ -101,7 +101,7 @@ export const Icons = {
   link: HiOutlineLink,
   externalLink: HiOutlineExternalLink,
   star: AiFillStar,
-  amazonaws: SiAmazonaws,
+  amazonaws: SiAmazonwebservices,
   angular: SiAngular,
   bootstrap: SiBootstrap,
   css3: SiCss3,
@@ -122,7 +122,7 @@ export const Icons = {
   tailwindcss: SiTailwindcss,
   typescript: SiTypescript,
   gmail: SiGmail,
-  twitter: SiTwitter,
+  twitter: SiX,
   linkedin: SiLinkedin,
   userFill: BiSolidUser,
   work: HiBriefcase,

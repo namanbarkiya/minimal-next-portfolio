@@ -32,7 +32,7 @@ const navItemVariants = {
     transition: {
       delay: 0.1 * i,
       duration: 0.5,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   }),
 };

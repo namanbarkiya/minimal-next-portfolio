@@ -1,16 +1,16 @@
-# Next.js 14 Developer Portfolio Template
+# Next.js 16 Developer Portfolio Template
 
-A modern, responsive, and SEO-optimized **Next.js 14 portfolio template** designed for developers, designers, and professionals. This open-source project helps you showcase your skills, experience, and projects with an elegant interface that stands out. Built with server-side rendering, TypeScript, and the latest web standards for optimal performance.
+A modern, responsive, and SEO-optimized **Next.js 16 portfolio template** designed for developers, designers, and professionals. This open-source project helps you showcase your skills, experience, and projects with an elegant interface that stands out. Built with server-side rendering, TypeScript, and the latest web standards for optimal performance.
 
 ## ✨ Key Features
 
 - **Professional Experience Timeline**: Showcase your career journey with a visually appealing timeline
 - **Project Showcase**: Display your technical projects with detailed information and live demos
-- **Dark/Light Mode**: Professional appearance with theme support
+- **Multiple Themes**: Dark, Light, Retro, Cyberpunk, Aurora, Synthwave, and Paper themes
 - **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
 - **100% Performance Score**: Fully optimized for speed and Core Web Vitals
 - **SEO-Ready**: Structured data, meta tags, and optimized content
-- **Modern Tech Stack**: Next.js 14, TypeScript, Tailwind CSS, and shadcn/ui
+- **Modern Tech Stack**: Next.js 16, React 19, TypeScript, Tailwind CSS, and shadcn/ui
 - **Easy Customization**: Well-organized code structure with minimal effort required
 - **Animations**: Subtle animations for engaging user experience
 - **Analytics Integration**: Ready for Google Analytics tracking
@@ -25,8 +25,9 @@ https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Framework**: [Next.js 16](https://nextjs.org/) with Turbopack
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **UI Library**: [React 19](https://react.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Form Handling**: Server actions with validation
@@ -70,14 +71,18 @@ To get started with your own portfolio website:
 
 ## 🎨 Customization
 
-The portfolio is designed to be easily customizable:
+Easily personalize your portfolio using the configuration files below:
 
-1. **Personal Information**: Update your personal info in `config/site.ts`
-2. **Skills**: Add your skills in `config/skills.ts`
-3. **Projects**: Add your technical projects in `config/projects.ts`
-4. **Experience**: Customize your professional experience in `config/experience.ts`
-5. **Contributions**: Showcase your contributions in `config/contributions.ts`
-6. **Colors & Theme**: Modify the theme in `tailwind.config.js`
+| Section            | How to Customize                                       | File Location             |
+| ------------------ | ------------------------------------------------------ | ------------------------- |
+| **Personal Info**  | Edit your name, bio, and social links                  | `config/site.ts`          |
+| **Skills**         | Add or modify the technologies and skills you showcase | `config/skills.ts`        |
+| **Projects**       | Highlight your technical projects                      | `config/projects.ts`      |
+| **Experience**     | Add your work and professional experience              | `config/experience.ts`    |
+| **Contributions**  | Display open-source/community contributions            | `config/contributions.ts` |
+| **Colors & Theme** | Customize color palette and themes                     | `tailwind.config.js`      |
+
+All configuration files are well-organized and documented for a smooth customization process.
 
 ## 🌟 Features In Detail
 
