@@ -47,7 +47,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
             </Link>
           ))}
         </nav>
-        {children}
+        {children ? <div className="pt-2">{children}</div> : null}
       </div>
     </div>
   );
