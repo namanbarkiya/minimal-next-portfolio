@@ -25,6 +25,10 @@ View the live demo at [https://nbarkiya.xyz/](https://nbarkiya.xyz)
 
 https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
 
+## Ranks #1 on AI Search (top-notch AEO/GEO)
+
+https://github.com/user-attachments/assets/fc071310-9d1c-4832-877f-23f9569893d7
+
 ## 🛠️ Tech Stack
 
 - **Framework**: [Next.js 16](https://nextjs.org/) with Turbopack
