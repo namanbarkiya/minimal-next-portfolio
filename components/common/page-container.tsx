@@ -17,7 +17,9 @@ export default function PageContainer({
     <ClientPageWrapper>
       <div>
         <PageHeader title={title} description={description} />
-        <div className="mx-6">{children}</div>
+        <div className="mx-4 sm:mx-6 lg:mx-8 max-w-full overflow-x-hidden">
+          {children}
+        </div>
       </div>
     </ClientPageWrapper>
   );

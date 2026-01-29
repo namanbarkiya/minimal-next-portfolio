@@ -186,12 +186,13 @@ export default function IndexPage() {
             {pagesConfig.projects.description}
           </AnimatedText>
         </div>
-        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
+        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3 items-stretch">
           {featuredProjects.map((exp, index) => (
             <AnimatedSection
               key={exp.id}
               delay={0.1 * (index + 1)}
               direction="up"
+              className="h-full"
             >
               <ProjectCard project={exp} />
             </AnimatedSection>
@@ -230,9 +231,7 @@ export default function IndexPage() {
             {pagesConfig.contributions.description}
           </AnimatedText>
         </div>
-        <div className="mx-auto justify-center gap-4 md:w-full lg:grid-cols-3">
-          <ContributionCard contributions={featuredContributions} />
-        </div>
+        <ContributionCard contributions={featuredContributions} />
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/contributions">
             <Button variant={"outline"} className="rounded-xl">

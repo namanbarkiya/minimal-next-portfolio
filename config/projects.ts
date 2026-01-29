@@ -47,7 +47,7 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2024-01-01"),
     endDate: new Date("2025-12-01"),
-    companyLogoImg: "/logo.png",
+    companyLogoImg: "/projects/portfolio/logo.png",
     pagesInfoArr: [
       {
         title: "Landing & Sections",
@@ -78,7 +78,7 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Next.js", "React", "Node.js", "Typescript", "Python"],
     startDate: new Date("2024-04-01"),
     endDate: new Date("2024-10-01"),
-    companyLogoImg: "/logo.png",
+    companyLogoImg: "/projects/convot/logo.png",
     pagesInfoArr: [
       {
         title: "Ingestion & Retrieval",
@@ -96,6 +96,106 @@ export const Projects: ProjectInterface[] = [
         "Built a production-ready AI chatbot platform with integrated analytics and a one-line embed widget.",
         "Designed ingestion and retrieval pipelines to support multiple sources (PDFs, URLs, text) with tenant isolation.",
         "Focused on reliability, security, and traceable answers by grounding responses in retrieved sources.",
+      ],
+    },
+  },
+  {
+    id: "niya-saas-template",
+    companyName: "Niya SaaS Template (30+ GitHub stars)",
+    type: "Personal",
+    category: ["Full Stack", "Web Dev", "UI/UX"],
+    shortDescription:
+      "Production-ready Next.js 15 template for developers and AI startups. Includes authentication, state management, beautiful UI components, and everything needed to build scalable SaaS applications.",
+    websiteLink: "https://niya.nbarkiya.xyz",
+    githubLink: "https://github.com/namanbarkiya/niya-saas-template",
+    techStack: ["Next.js", "React", "Typescript", "Supabase", "Tailwind CSS"],
+    startDate: new Date("2024-08-01"),
+    endDate: new Date("2025-01-01"),
+    companyLogoImg: "/projects/niya/logo.png",
+    pagesInfoArr: [
+      {
+        title: "Landing Page",
+        description:
+          "Modern landing page showcasing the template features, tech stack, and pricing options.",
+        imgArr: ["/logo.png"],
+      },
+      {
+        title: "Authentication System",
+        description:
+          "Complete authentication system with Supabase, protected routes, and role-based access control.",
+        imgArr: ["/logo.png"],
+      },
+      {
+        title: "Dashboard & Components",
+        description:
+          "Beautiful UI components with Magic UI, Radix primitives, and comprehensive dashboard templates.",
+        imgArr: ["/logo.png"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Niya is a production-ready Next.js 15 template designed for developers and AI startups. Built with modern best practices, it includes everything needed to build scalable SaaS applications.",
+        "The template features a complete authentication system with Supabase, beautiful UI components with Magic UI and Radix primitives, state management with Zustand and React Query, and full TypeScript support with Zod validation.",
+        "It's optimized for performance, includes SEO-friendly metadata, and provides a solid foundation for rapid prototyping and production deployment.",
+      ],
+      bullets: [
+        "Created a production-ready Next.js 15 template with complete authentication system and protected routes.",
+        "Integrated Supabase for database, authentication, and real-time features with full TypeScript support.",
+        "Built comprehensive UI component library with Magic UI, Radix primitives, and Tailwind CSS styling.",
+        "Implemented state management with Zustand for client state and React Query for server state management.",
+        "Designed for developers and AI startups with all essential features to start building SaaS products.",
+        "Achieved 30+ GitHub stars and recognition as a comprehensive starter template for modern web applications.",
+      ],
+    },
+  },
+  {
+    id: "portfolio-card",
+    companyName: "Portfolio Card",
+    type: "Personal",
+    category: ["Web Dev", "Frontend", "3D Modeling"],
+    shortDescription:
+      "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
+    websiteLink: "https://card.namanbarkiya.xyz/",
+    githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
+    techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
+    startDate: new Date("2022-03-01"),
+    endDate: new Date("2022-07-01"),
+    companyLogoImg: "/projects/card/logo.png",
+    pagesInfoArr: [
+      {
+        title: "Card Views",
+        description: "Front and back views of the interactive 3D card",
+        imgArr: ["/projects/card/card_2.webp", "/projects/card/card_3.webp"],
+      },
+      {
+        title: "Interactive Elements",
+        description:
+          "Custom links embedded in the 3D model with interactive animations",
+        imgArr: ["/projects/card/card_1.webp"],
+      },
+      {
+        title: "3D Model Development",
+        description: "Blender project showcasing the model creation process",
+        imgArr: ["/projects/card/card_4.webp"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "In my personal, I've ventured into the world of creativity, fashioning a distinctive portfolio card through the utilization of Three.js.",
+        "This portfolio card transcends convention; it emerges as a captivating 3D model, adorned with meticulous lighting arrangements that conjure a spellbinding visual journey.",
+        "To materialize this concept, I've harnessed the combined potential of Three.js and Blender, orchestrating a meticulous crafting of the central 3D model that serves as the cornerstone of the card's allure.",
+        "Yet, the allure extends beyond aesthetics. I've ingeniously interwoven custom links directly into the fabric of Three.js components. Through the creation and seamless integration of novel components, these additions elegantly rest upon the card's surface, mirroring its rotations and delivering an interactive dimension to my portfolio.",
+        "The portfolio card itself is an opus of motion, perpetually swaying in an auto-rotational dance that unfurls its multifaceted essence. As an enhancement, I've introduced an instinctive user interaction element. A simple, intuitive drag of the card in specific directions grants viewers a comprehensive vantage, enabling exploration from every conceivable angle.",
+        "At its core, my personal epitomizes technical finesse, artistic expression, and interactive design. The amalgamation of Three.js, Blender's prowess, and the innovation of component integration has birthed not only a portfolio card, but a dynamic encounter leaving an indelible imprint on all who partake.",
+      ],
+      bullets: [
+        "Conceptualized and realized a distinct portfolio card using Three.js, highlighting creative exploration.",
+        "Crafted a mesmerizing 3D model enhanced by thoughtful lighting arrangements, resulting in a captivating visual voyage.",
+        "Leveraged the synergy of Three.js and Blender to meticulously sculpt and refine the central 3D model, embodying meticulous attention to detail.",
+        "Innovatively integrated custom links within Three.js components, introducing an interactive layer via seamlessly incorporated new elements.",
+        "Enabled an auto-rotating feature for the portfolio card, perpetually showcasing its various facets to observers.",
+        "Introduced an instinctual user interaction mechanism, allowing viewers to comprehensively explore the card's dimensions through simple, intuitive dragging motions.",
+        "Represented a fusion of technical prowess, artistic ingenuity, and interactive design in a project that reshapes the boundaries of conventional portfolio representation.",
       ],
     },
   },
@@ -396,57 +496,7 @@ export const Projects: ProjectInterface[] = [
       ],
     },
   },
-  {
-    id: "portfolio-card",
-    companyName: "Portfolio Card",
-    type: "Personal",
-    category: ["Web Dev", "Frontend", "3D Modeling"],
-    shortDescription:
-      "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
-    websiteLink: "https://card.namanbarkiya.xyz/",
-    githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
-    techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
-    startDate: new Date("2022-03-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/card/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Card Views",
-        description: "Front and back views of the interactive 3D card",
-        imgArr: ["/projects/card/card_2.webp", "/projects/card/card_3.webp"],
-      },
-      {
-        title: "Interactive Elements",
-        description:
-          "Custom links embedded in the 3D model with interactive animations",
-        imgArr: ["/projects/card/card_1.webp"],
-      },
-      {
-        title: "3D Model Development",
-        description: "Blender project showcasing the model creation process",
-        imgArr: ["/projects/card/card_4.webp"],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "In my personal, I've ventured into the world of creativity, fashioning a distinctive portfolio card through the utilization of Three.js.",
-        "This portfolio card transcends convention; it emerges as a captivating 3D model, adorned with meticulous lighting arrangements that conjure a spellbinding visual journey.",
-        "To materialize this concept, I've harnessed the combined potential of Three.js and Blender, orchestrating a meticulous crafting of the central 3D model that serves as the cornerstone of the card's allure.",
-        "Yet, the allure extends beyond aesthetics. I've ingeniously interwoven custom links directly into the fabric of Three.js components. Through the creation and seamless integration of novel components, these additions elegantly rest upon the card's surface, mirroring its rotations and delivering an interactive dimension to my portfolio.",
-        "The portfolio card itself is an opus of motion, perpetually swaying in an auto-rotational dance that unfurls its multifaceted essence. As an enhancement, I've introduced an instinctive user interaction element. A simple, intuitive drag of the card in specific directions grants viewers a comprehensive vantage, enabling exploration from every conceivable angle.",
-        "At its core, my personal epitomizes technical finesse, artistic expression, and interactive design. The amalgamation of Three.js, Blender's prowess, and the innovation of component integration has birthed not only a portfolio card, but a dynamic encounter leaving an indelible imprint on all who partake.",
-      ],
-      bullets: [
-        "Conceptualized and realized a distinct portfolio card using Three.js, highlighting creative exploration.",
-        "Crafted a mesmerizing 3D model enhanced by thoughtful lighting arrangements, resulting in a captivating visual voyage.",
-        "Leveraged the synergy of Three.js and Blender to meticulously sculpt and refine the central 3D model, embodying meticulous attention to detail.",
-        "Innovatively integrated custom links within Three.js components, introducing an interactive layer via seamlessly incorporated new elements.",
-        "Enabled an auto-rotating feature for the portfolio card, perpetually showcasing its various facets to observers.",
-        "Introduced an instinctual user interaction mechanism, allowing viewers to comprehensively explore the card's dimensions through simple, intuitive dragging motions.",
-        "Represented a fusion of technical prowess, artistic ingenuity, and interactive design in a project that reshapes the boundaries of conventional portfolio representation.",
-      ],
-    },
-  },
+
   {
     id: "cirql-dashboard",
     companyName: "Cirql Dashboard",
