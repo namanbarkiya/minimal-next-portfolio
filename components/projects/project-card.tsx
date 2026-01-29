@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="relative p-6 max-w-sm bg-background border border-border rounded-lg h-full flex flex-col">
+    <div className="relative p-6 w-full bg-background border border-border rounded-lg h-full flex flex-col">
       <div className="relative w-full h-[200px] flex-shrink-0">
         <Image
           className="rounded-lg border border-border object-cover"
@@ -38,7 +38,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </Button>
         </Link>
       </div>
-      <div className="absolute bottom-4 right-4 p-3 rounded-full bg-background border border-border">
+      <div className="absolute bottom-4 right-4 p-3 rounded-full bg-background border border-border hidden md:block">
         {project.type === "Personal" ? (
           <Icons.userFill className="h-4 w-4" />
         ) : (
