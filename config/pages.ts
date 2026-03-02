@@ -63,6 +63,16 @@ export const pagesConfig: PagesConfig = {
       description: "Naman Barkiya's resume.",
     },
   },
+  blogs: {
+    title: "Blogs",
+    description:
+      "Thoughts on AI, software engineering, and building in public.",
+    metadata: {
+      title: "Blogs",
+      description:
+        "Naman Barkiya's blog — thoughts on AI, software engineering, and building in public.",
+    },
+  },
   experience: {
     title: "Experience",
     description: "Professional journey and career timeline.",
