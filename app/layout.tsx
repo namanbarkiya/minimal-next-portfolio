@@ -10,6 +10,7 @@ import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { LangProvider } from "@/providers/lang-provider";
 import { ModalProvider } from "@/providers/modal-provider";
 
 const fontSans = FontSans({
@@ -126,10 +127,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
             "synthwave",
           ]}
         >
-          {children}
-          <Analytics />
-          <Toaster />
-          <ModalProvider />
+          <LangProvider>
+            {children}
+            <Analytics />
+            <Toaster />
+            <ModalProvider />
+          </LangProvider>
         </ThemeProvider>
         <Script
           src="https://convot.xyz/widget.js"

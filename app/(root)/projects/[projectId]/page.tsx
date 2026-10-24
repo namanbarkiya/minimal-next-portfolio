@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
+import DictText from "@/components/common/dict-text";
 import { Icons } from "@/components/common/icons";
 import ProjectDescription from "@/components/projects/project-description";
 import { buttonVariants } from "@/components/ui/button";
@@ -37,7 +38,7 @@ export default async function Project({ params }: ProjectPageProps) {
         )}
       >
         <Icons.chevronLeft className="mr-2 h-4 w-4" />
-        All Projects
+        <DictText text="All Projects" />
       </Link>
       <div>
         <time
@@ -50,14 +51,18 @@ export default async function Project({ params }: ProjectPageProps) {
           {project.companyName}
           <div className="flex items-center">
             {project.githubLink && (
-              <CustomTooltip text="Link to the source code.">
+              <CustomTooltip text={<DictText text="Link to the source code." />}>
                 <Link href={project.githubLink} target="_blank">
                   <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
                 </Link>
               </CustomTooltip>
             )}
             {project.websiteLink && (
-              <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
+              <CustomTooltip
+                text={
+                  <DictText text="Please note that some project links may be temporarily unavailable." />
+                }
+              >
                 <Link href={project.websiteLink} target="_blank">
                   <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
                 </Link>
@@ -100,14 +105,14 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
-          Tech Stack
+          <DictText text="Tech Stack" />
         </h2>
         <ChipContainer textArr={project.techStack} />
       </div>
 
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
-          Description
+          <DictText text="Description" />
         </h2>
         {/* {<project.descriptionComponent />} */}
         <ProjectDescription
@@ -118,15 +123,18 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
-          Page Info
+          <DictText text="Page Info" />
         </h2>
         {project.pagesInfoArr.map((page, ind) => (
           <div key={ind}>
             <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
-              <Icons.star className="h-5 w-5 mr-2" /> {page.title}
+              <Icons.star className="h-5 w-5 mr-2" />{" "}
+              <DictText text={page.title} />
             </h3>
             <div>
-              <p>{page.description}</p>
+              <p>
+                <DictText text={page.description ?? ""} />
+              </p>
               {page.imgArr.map((img, ind) => (
                 <Image
                   src={img}
@@ -150,7 +158,7 @@ export default async function Project({ params }: ProjectPageProps) {
           className={cn(buttonVariants({ variant: "ghost" }))}
         >
           <Icons.chevronLeft className="mr-2 h-4 w-4" />
-          All Projects
+          <DictText text="All Projects" />
         </Link>
       </div>
     </article>

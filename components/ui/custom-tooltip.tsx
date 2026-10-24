@@ -10,7 +10,7 @@ import {
 
 interface CustomTooltipProps {
   children: React.ReactNode;
-  text: string;
+  text: React.ReactNode;
   icon?: any;
 }
 

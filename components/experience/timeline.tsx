@@ -8,6 +8,7 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { ExperienceInterface } from "@/config/experience";
+import { useTranslation } from "@/hooks/use-translation";
 
 // Helper function to extract year from date
 const getYearFromDate = (date: Date): string => {
@@ -17,11 +18,12 @@ const getYearFromDate = (date: Date): string => {
 // Helper function to get duration text
 const getDurationText = (
   startDate: Date,
-  endDate: Date | "Present"
+  endDate: Date | "Present",
+  presentLabel: string
 ): string => {
   const startYear = getYearFromDate(startDate);
   const endYear =
-    typeof endDate === "string" ? "Present" : getYearFromDate(endDate);
+    typeof endDate === "string" ? presentLabel : getYearFromDate(endDate);
   return `${startYear} - ${endYear}`;
 };
 
@@ -30,6 +32,8 @@ interface TimelineProps {
 }
 
 const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
+  const t = useTranslation();
+
   // Sort experiences by date (most recent first)
   const sortedExperiences = [...experiences].sort((a, b) => {
     const dateA = a.endDate === "Present" ? new Date() : a.endDate;
@@ -62,12 +66,13 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                     <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                      {experience.position}
+                      {t(experience.position)}
                     </h3>
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-primary/10 text-primary border border-primary/20 w-fit">
                       {getDurationText(
                         experience.startDate,
-                        experience.endDate
+                        experience.endDate,
+                        t("Present")
                       )}
                     </span>
                   </div>
@@ -87,10 +92,10 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                     )}
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
-                    {experience.location}
+                    {t(experience.location)}
                   </p>
                   <p className="text-sm text-muted-foreground line-clamp-2">
-                    {experience.description[0]}
+                    {t(experience.description[0])}
                   </p>
                 </div>
               </div>
@@ -101,7 +106,7 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                 asChild
               >
                 <Link href={`/experience/${experience.id}`}>
-                  View Details
+                  {t("View Details")}
                   <Icons.chevronRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>

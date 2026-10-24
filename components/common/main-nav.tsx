@@ -9,6 +9,7 @@ import * as React from "react";
 import { Icons } from "@/components/common/icons";
 import { MobileNav } from "@/components/common/mobile-nav";
 import { siteConfig } from "@/config/site";
+import { useTranslation } from "@/hooks/use-translation";
 import { cn } from "@/lib/utils";
 
 interface MainNavProps {
@@ -41,6 +42,7 @@ export function MainNav({ items, children }: MainNavProps) {
   const segment = useSelectedLayoutSegment();
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
   const pathname = usePathname();
+  const t = useTranslation();
 
   React.useEffect(() => {
     setShowMobileMenu(false);
@@ -81,7 +83,7 @@ export function MainNav({ items, children }: MainNavProps) {
                   item.disabled && "cursor-not-allowed opacity-80"
                 )}
               >
-                {item.title}
+                {t(item.title)}
               </Link>
             </motion.div>
           ))}
@@ -94,7 +96,7 @@ export function MainNav({ items, children }: MainNavProps) {
         whileTap={{ scale: 0.95 }}
       >
         {showMobileMenu ? <Icons.close /> : <Icons.menu />}
-        <span className="font-bold">Menu</span>
+        <span className="font-bold">{t("Menu")}</span>
       </motion.button>
       {showMobileMenu && items && (
         <MobileNav items={items}>{children}</MobileNav>

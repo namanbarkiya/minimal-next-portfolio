@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 
 import { AnimatedSection } from "@/components/common/animated-section";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
+import DictText from "@/components/common/dict-text";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -28,11 +29,19 @@ const getYearFromDate = (date: Date): string => {
 const getDurationText = (
   startDate: Date,
   endDate: Date | "Present"
-): string => {
+): React.ReactNode => {
   const startYear = getYearFromDate(startDate);
   const endYear =
-    typeof endDate === "string" ? "Present" : getYearFromDate(endDate);
-  return `${startYear} - ${endYear}`;
+    typeof endDate === "string" ? (
+      <DictText text="Present" />
+    ) : (
+      getYearFromDate(endDate)
+    );
+  return (
+    <>
+      {startYear} - {endYear}
+    </>
+  );
 };
 
 export async function generateMetadata({
@@ -74,7 +83,7 @@ export default async function ExperienceDetailPage({
         <AnimatedSection delay={0.3}>
           <div>
             <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
-              Role Summary
+              <DictText text="Role Summary" />
             </h3>
             <ul className="space-y-3">
               {experience.description.map((desc, idx) => (
@@ -83,7 +92,7 @@ export default async function ExperienceDetailPage({
                   className="text-base leading-relaxed flex items-start gap-3"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  {desc}
+                  <DictText text={desc} />
                 </li>
               ))}
             </ul>
@@ -98,7 +107,7 @@ export default async function ExperienceDetailPage({
         <AnimatedSection delay={0.3}>
           <div>
             <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
-              Key Achievements
+              <DictText text="Key Achievements" />
             </h3>
             <ul className="space-y-3">
               {experience.achievements.map((achievement, idx) => (
@@ -107,7 +116,7 @@ export default async function ExperienceDetailPage({
                   className="text-base leading-relaxed flex items-start gap-3"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  {achievement}
+                  <DictText text={achievement} />
                 </li>
               ))}
             </ul>
@@ -122,12 +131,14 @@ export default async function ExperienceDetailPage({
         <AnimatedSection delay={0.3}>
           <div>
             <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
-              Technologies & Skills
+              <DictText text="Technologies & Skills" />
             </h3>
             <ChipContainer textArr={experience.skills} />
             <p className="mt-4 text-sm text-muted-foreground">
-              These are the primary technologies and skills utilized during my
-              time at {experience.company}.
+              <DictText
+                text="These are the primary technologies and skills utilized during my time at {company}."
+                values={{ company: experience.company }}
+              />
             </p>
           </div>
         </AnimatedSection>
@@ -142,7 +153,7 @@ export default async function ExperienceDetailPage({
           <Button variant="ghost" size="sm" className="mb-4" asChild>
             <Link href="/experience">
               <Icons.chevronLeft className="mr-2 h-4 w-4" />
-              Back to Experience
+              <DictText text="Back to Experience" />
             </Link>
           </Button>
         </AnimatedSection>
@@ -166,7 +177,7 @@ export default async function ExperienceDetailPage({
                     )}
                     <div className="flex-1 text-center sm:text-left">
                       <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
-                        {experience.position}
+                        <DictText text={experience.position} />
                       </h1>
                       <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
                         <span className="text-md font-medium text-muted-foreground">
@@ -184,7 +195,7 @@ export default async function ExperienceDetailPage({
                         )}
                       </div>
                       <p className="text-muted-foreground">
-                        {experience.location}
+                        <DictText text={experience.location} />
                       </p>
                     </div>
                   </div>
@@ -210,7 +221,7 @@ export default async function ExperienceDetailPage({
           <Button variant="outline" asChild>
             <Link href="/experience">
               <Icons.chevronLeft className="mr-2 h-4 w-4" />
-              View All Experience
+              <DictText text="View All Experience" />
             </Link>
           </Button>
         </AnimatedSection>

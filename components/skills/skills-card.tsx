@@ -1,3 +1,4 @@
+import DictText from "@/components/common/dict-text";
 import Rating from "@/components/skills/rating";
 import { skillsInterface } from "@/config/skills";
 
@@ -18,7 +19,7 @@ export default function SkillsCard({ skills }: SkillsCardProps) {
             <div className="space-y-2">
               <h3 className="font-bold">{skill.name}</h3>
               <p className="text-sm text-muted-foreground">
-                {skill.description}
+                <DictText text={skill.description} />
               </p>
               <Rating stars={skill.rating} />
             </div>

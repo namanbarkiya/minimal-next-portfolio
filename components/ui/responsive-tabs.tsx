@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useTranslation } from "@/hooks/use-translation";
 import { cn } from "@/lib/utils";
 
 interface TabItem {
@@ -30,6 +31,7 @@ export function ResponsiveTabs({
   defaultValue,
   className,
 }: ResponsiveTabsProps) {
+  const t = useTranslation();
   const [activeTab, setActiveTab] = React.useState(
     defaultValue || items[0]?.value
   );
@@ -42,7 +44,7 @@ export function ResponsiveTabs({
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="w-full justify-between">
-              {activeItem?.label || "Select option"}
+              {activeItem ? t(activeItem.label) : "Select option"}
               <ChevronDown className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>
@@ -56,7 +58,7 @@ export function ResponsiveTabs({
                   activeTab === item.value && "bg-accent"
                 )}
               >
-                {item.label}
+                {t(item.label)}
               </DropdownMenuItem>
             ))}
           </DropdownMenuContent>
@@ -69,7 +71,7 @@ export function ResponsiveTabs({
           <TabsList className="grid w-full grid-cols-3">
             {items.map((item) => (
               <TabsTrigger key={item.value} value={item.value}>
-                {item.label}
+                {t(item.label)}
               </TabsTrigger>
             ))}
           </TabsList>

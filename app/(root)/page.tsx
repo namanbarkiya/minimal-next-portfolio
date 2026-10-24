@@ -7,6 +7,7 @@ import BlogCard from "@/components/blogs/blog-card";
 import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
+import DictText from "@/components/common/dict-text";
 import { Icons } from "@/components/common/icons";
 import ContributionCard from "@/components/contributions/contribution-card";
 import ExperienceCard from "@/components/experience/experience-card";
@@ -100,12 +101,11 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Applied AI Engineer
+            <DictText text="Applied AI Engineer" />
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Software engineer working at the intersection of AI, data, and
-              scalable software systems.
+              <DictText text="Software engineer working at the intersection of AI, data, and scalable software systems." />
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export default function IndexPage() {
                 className={cn(buttonVariants({ size: "lg" }))}
                 aria-label="View resume"
               >
-                <Icons.post className="w-4 h-4 mr-2" /> Resume
+                <Icons.post className="w-4 h-4 mr-2" /> <DictText text="Resume" />
               </Link>
             </AnimatedText>
             <AnimatedText delay={0.8}>
@@ -132,7 +132,8 @@ export default function IndexPage() {
                 )}
                 aria-label="Contact Naman Barkiya"
               >
-                <Icons.contact className="w-4 h-4 mr-2" /> Contact
+                <Icons.contact className="w-4 h-4 mr-2" />{" "}
+                <DictText text="Contact" />
               </Link>
             </AnimatedText>
           </div>
@@ -151,14 +152,14 @@ export default function IndexPage() {
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.projects.title}
+            <DictText text={pagesConfig.projects.title} />
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.projects.description}
+            <DictText text={pagesConfig.projects.description} />
           </AnimatedText>
         </div>
         <div className="w-full">
@@ -178,7 +179,8 @@ export default function IndexPage() {
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/projects">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              <Icons.chevronDown className="mr-2 h-4 w-4" />{" "}
+              <DictText text="View All" />
             </Button>
           </Link>
         </AnimatedText>
@@ -193,14 +195,14 @@ export default function IndexPage() {
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.experience.title}
+            <DictText text={pagesConfig.experience.title} />
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.experience.description}
+            <DictText text={pagesConfig.experience.description} />
           </AnimatedText>
         </div>
         <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
@@ -217,7 +219,8 @@ export default function IndexPage() {
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/experience">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              <Icons.chevronDown className="mr-2 h-4 w-4" />{" "}
+              <DictText text="View All" />
             </Button>
           </Link>
         </AnimatedText>
@@ -232,21 +235,22 @@ export default function IndexPage() {
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.contributions.title}
+            <DictText text={pagesConfig.contributions.title} />
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.contributions.description}
+            <DictText text={pagesConfig.contributions.description} />
           </AnimatedText>
         </div>
         <ContributionCard contributions={featuredContributions} />
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/contributions">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              <Icons.chevronDown className="mr-2 h-4 w-4" />{" "}
+              <DictText text="View All" />
             </Button>
           </Link>
         </AnimatedText>
@@ -261,14 +265,14 @@ export default function IndexPage() {
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.blogs.title}
+            <DictText text={pagesConfig.blogs.title} />
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.blogs.description}
+            <DictText text={pagesConfig.blogs.description} />
           </AnimatedText>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full items-stretch">
@@ -286,7 +290,8 @@ export default function IndexPage() {
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/blogs">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              <Icons.chevronDown className="mr-2 h-4 w-4" />{" "}
+              <DictText text="View All" />
             </Button>
           </Link>
         </AnimatedText>
@@ -301,21 +306,22 @@ export default function IndexPage() {
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.skills.title}
+            <DictText text={pagesConfig.skills.title} />
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.skills.description}
+            <DictText text={pagesConfig.skills.description} />
           </AnimatedText>
         </div>
         <SkillsCard skills={featuredSkills} />
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/skills">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              <Icons.chevronDown className="mr-2 h-4 w-4" />{" "}
+              <DictText text="View All" />
             </Button>
           </Link>
         </AnimatedText>

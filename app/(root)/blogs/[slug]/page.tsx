@@ -7,6 +7,7 @@ import Script from "next/script";
 import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
+import DictText from "@/components/common/dict-text";
 import { Icons } from "@/components/common/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
@@ -186,7 +187,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   href="/"
                   className="hover:text-foreground transition-colors"
                 >
-                  Home
+                  <DictText text="Home" />
                 </Link>
               </li>
               <li aria-hidden="true">
@@ -197,7 +198,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   href="/blogs"
                   className="hover:text-foreground transition-colors"
                 >
-                  Blogs
+                  <DictText text="Blogs" />
                 </Link>
               </li>
               <li aria-hidden="true">
@@ -257,7 +258,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {post.readingTime && (
                 <span className="flex items-center gap-1.5">
                   <Icons.clock className="w-4 h-4" />
-                  {post.readingTime} min read
+                  <DictText
+                    text="{minutes} min read"
+                    values={{ minutes: post.readingTime }}
+                  />
                 </span>
               )}
             </div>
@@ -303,10 +307,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               )}
             >
               <Icons.chevronLeft className="w-4 h-4" />
-              All posts
+              <DictText text="All posts" />
             </Link>
             <div className="text-sm text-muted-foreground">
-              Written by{" "}
+              <DictText text="Written by" />{" "}
               <Link
                 href={siteConfig.links.twitter}
                 target="_blank"

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import DictText from "@/components/common/dict-text";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
@@ -26,14 +27,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.companyName}
         </h5>
         <p className="line-clamp-3 font-normal text-muted-foreground flex-grow">
-          {project.shortDescription}
+          <DictText text={project.shortDescription} />
         </p>
         <div className="flex gap-2 flex-wrap">
           <ChipContainer textArr={project.category} />
         </div>
         <Link href={`/projects/${project.id}`} className="mt-auto">
           <Button variant={"default"} className="mt-2 w-full sm:w-auto">
-            Read more
+            <DictText text="Read more" />
             <Icons.chevronRight className="w-4 ml-1" />
           </Button>
         </Link>

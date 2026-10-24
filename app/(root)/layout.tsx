@@ -1,4 +1,5 @@
 import { GitHubStarBadge } from "@/components/common/github-star-badge";
+import { LangToggle } from "@/components/common/lang-toggle";
 import { MainNav } from "@/components/common/main-nav";
 import { ModeToggle } from "@/components/common/mode-toggle";
 import { SiteFooter } from "@/components/common/site-footer";
@@ -16,11 +17,13 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
           <MainNav items={routesConfig.mainNav}>
             <div className="flex items-center gap-3">
               <GitHubStarBadge className="w-full justify-center" />
+              <LangToggle />
               <ModeToggle />
             </div>
           </MainNav>
           <nav className="flex items-center gap-5">
             <GitHubStarBadge />
+            <LangToggle />
             <ModeToggle />
           </nav>
         </div>

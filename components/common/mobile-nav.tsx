@@ -4,6 +4,7 @@ import * as React from "react";
 
 import { siteConfig } from "@/config/site";
 import { useLockBody } from "@/hooks/use-lock-body";
+import { useTranslation } from "@/hooks/use-translation";
 import { cn } from "@/lib/utils";
 
 interface MobileNavProps {
@@ -20,6 +21,7 @@ const norican = Norican({
 
 export function MobileNav({ items, children }: MobileNavProps) {
   useLockBody();
+  const t = useTranslation();
 
   return (
     <div
@@ -43,7 +45,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
             >
-              {item.title}
+              {t(item.title)}
             </Link>
           ))}
         </nav>
